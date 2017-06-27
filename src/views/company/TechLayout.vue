@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<div class="xing-box finance-xing-box">
-				<transition name="fade">
+				<transition name="slide">
 					<router-view></router-view>
 				</transition>
 			</div>

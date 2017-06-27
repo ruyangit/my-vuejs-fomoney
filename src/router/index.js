@@ -35,6 +35,11 @@ const EnterLeadershipTeam = r => require.ensure([], () => r(require('@/views/ent
 const NewsLayout = r => require.ensure([], () => r(require('@/views/news/Layout')), 'news')
 const GroupNews = r => require.ensure([], () => r(require('@/views/news/GroupNews')), 'news')
 const MediaNews = r => require.ensure([], () => r(require('@/views/news/MediaNews')), 'news')
+const DataLayout = r => require.ensure([], () => r(require('@/views/news/DataLayout')), 'news')
+const DataDraft = r => require.ensure([], () => r(require('@/views/news/DataDraft')), 'news')
+const DataVideo = r => require.ensure([], () => r(require('@/views/news/DataVideo')), 'news')
+const DataDoc = r => require.ensure([], () => r(require('@/views/news/DataDoc')), 'news')
+const DataImg = r => require.ensure([], () => r(require('@/views/news/DataImg')), 'news')
 
 const JoinUs = r => require.ensure([], () => r(require('@/views/JoinUs')), 'joinus')
 const ContactUs = r => require.ensure([], () => r(require('@/views/ContactUs')), 'contactus')
@@ -122,11 +127,11 @@ export default new Router({
       path: '/enter',
       component: Enter,
     },
-    { path: '/enter/aboutus',  component: EnterAboutUs},
-    { path: '/enter/brandculture',  component: EnterBrandCulture},
-    { path: '/enter/cooperativepartner',  component: EnterCooperativePartner},
-    { path: '/enter/developmenthistory',  component: EnterDevelopmentHistory},
-    { path: '/enter/leadershipteam',  component: EnterLeadershipTeam},
+    { path: '/enter/aboutus', component: EnterAboutUs },
+    { path: '/enter/brandculture', component: EnterBrandCulture },
+    { path: '/enter/cooperativepartner', component: EnterCooperativePartner },
+    { path: '/enter/developmenthistory', component: EnterDevelopmentHistory },
+    { path: '/enter/leadershipteam', component: EnterLeadershipTeam },
     {
       path: '/news',
       component: NewsLayout,
@@ -138,10 +143,32 @@ export default new Router({
         {
           path: 'medianews',
           component: MediaNews
+        },
+        {
+          path: 'data',
+          component: DataLayout,
+          children: [
+            {
+              path: 'draft',
+              component: DataDraft
+            },
+            {
+              path: 'video',
+              component: DataVideo
+            },
+            {
+              path: 'doc',
+              component: DataDoc
+            },
+            {
+              path: 'img',
+              component: DataImg
+            },
+          ]
         }
       ]
     },
-    
+
     {
       path: '/joinus',
       component: JoinUs

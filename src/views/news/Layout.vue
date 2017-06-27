@@ -11,12 +11,11 @@
 				</div>
 			</div>
 			<div class="xing-box newscenter-xing-box">
-				<transition name="fade">
+				<transition name="slide">
 					<router-view></router-view>
 				</transition>
 			</div>
 		</div>
-	
 		<z-footer></z-footer>
 	</div>
 </template>
@@ -40,7 +39,7 @@ export default {
 				},
 				{
 					text:'资料专区',
-					url:'/news/medianews',
+					url:'/news/data/draft',
 					isShow:false
 				}
 			]

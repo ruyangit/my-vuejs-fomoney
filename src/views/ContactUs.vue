@@ -7,45 +7,48 @@
                 <div class="contact-address-info">
                     <h3>集团公司地址</h3>
                     <p>
-                        <img src="/static/images/icon_phone.png" alt="电话" >客服热线：400 820 2728&nbsp;&nbsp;&nbsp;Tel+86(021)62266983</p>
+                        <img src="/static/images/icon_phone.png" alt="电话">客服热线：400 820 2728&nbsp;&nbsp;&nbsp;Tel+86(021)62266983</p>
                     <p>
-                        <img src="/static/images/icon_email.png" alt="邮箱" >客服邮箱：cs_hzx@fosun.com</p>
+                        <img src="/static/images/icon_email.png" alt="邮箱">客服邮箱：cs_hzx@fosun.com</p>
                     <p>
-                        <img src="/static/images/icon_weizhi.png" alt="地址" >地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：上海市宜山路1289号克隆科技园B栋9楼</p>
+                        <img src="/static/images/icon_weizhi.png" alt="地址">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：上海市宜山路1289号克隆科技园B栋9楼</p>
                 </div>
                 <!--咨询留言-->
-                <form>
+                <form @submit.prevent="validateBeforeSubmit('myform')" data-vv-scope="myform">
                     <h3>咨询留言</h3>
                     <table>
-                        <tr>
-                            <td>
-                                <label for="name">您的姓名：</label>
-                            </td>
-                            <td>
-                                <input type="text" placeholder="请输入您的姓名" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="name">手机号：</label>
-                            </td>
-                            <td>
-                                <input type="text" placeholder="请输入手机号码" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="name">备注：</label>
-                            </td>
-                            <td>
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input class="btn" type="submit" value="提交" />
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="name">您的姓名：</label>
+                                </td>
+                                <td>
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" name="name" type="text" v-model="myform.name" placeholder="请输入您的姓名">
+                                    <!--<p v-show="errors.has('name')" style="font-size:12px;color:red;">请输入您的姓名</p>-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">手机号：</label>
+                                </td>
+                                <td>
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" name="phone" type="text" v-model="myform.phone" placeholder="请输入手机号码">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">备注：</label>
+                                </td>
+                                <td>
+                                    <textarea v-model="myform.content"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="btn" type="submit">提交</button>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </form>
             </div>
@@ -55,12 +58,56 @@
 </template>
 
 <script>
+import api from '@api'
 import zHeader from '@/components/Header'
 import zFooter from '@/components/Footer'
+
+import { Validator } from 'vee-validate'
+Validator.extend('phone', {
+    messages: {
+        en: field => field + '必须是11位手机号码',
+    },
+    validate: value => {
+        return value.length == 11 && /^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value)
+    }
+});
+
 export default {
+    data() {
+        return {
+            myform: {
+                type:'1',
+                name: '',
+                phone: '',
+                content: ''
+            }
+        }
+    },
     components: {
         zHeader,
         zFooter
+    },
+    created() {
+        this.defaultData = JSON.parse(JSON.stringify(this.myform));
+    },
+    methods: {
+        async validateBeforeSubmit(scope) {
+            this.$validator.validateAll(scope).then(result => {
+                if (result) {
+                    api.post('/v1/guestbook/save', this.myform).then(response => {
+                        if(response.status==200&&response.data.code==200){
+                            alert('咨询留言-提交成功！');
+                            this.defaultData = Object.assign(this.myform, this.defaultData);
+                        }
+                    });
+                }else{
+                    alert('请将表单填写完整！');
+                    return
+                }
+            }).catch(() => {
+            });
+           
+        }
     }
 }
 </script>
