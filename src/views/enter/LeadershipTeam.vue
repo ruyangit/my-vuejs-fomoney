@@ -108,7 +108,7 @@ export default {
             } else if (al === "al3") {
                 this.al3 = !this.al3
             } else if (al === "al4") {
-                this.al3 = !this.al4
+                this.al4 = !this.al4
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <z-header></z-header> 
+    <z-header></z-header>
     <div class="container index-container">
       <!--banner轮播-->
       <div class="banner-box">

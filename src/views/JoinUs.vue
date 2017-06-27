@@ -9,23 +9,8 @@
 			<!--条件筛选-->
 			<div class="join-condition">
 				<ul class="clearfix">
-					<li class="active">
-						<a href="javascript:;">技术</a>
-					</li>
-					<li>
-						<a class="ml40 mb20" href="javascript:;">产品</a>
-					</li>
-					<li>
-						<a class="ml40 mb20" href="javascript:;">设计</a>
-					</li>
-					<li>
-						<a href="javascript:;">运营</a>
-					</li>
-					<li>
-						<a class="ml40 mb20" href="javascript:;">市场与销售</a>
-					</li>
-					<li>
-						<a class="ml40" href="javascript:;">金融</a>
+					<li :class="[item.class , item.isA?'active':'']" v-for="(item,index) in categoryList" :key="index" @click="category(item.id)">
+						<a href="javascript:;" v-text="item.name"></a>
 					</li>
 				</ul>
 			</div>
@@ -33,74 +18,13 @@
 			<div class="join-recruit">
 				<h2>招聘信息</h2>
 				<ul>
-					<li>
-						<h4>
-							<img class="img1" src="/static/images/icon_user.png" alt="" > 产品事业部（产品需求分析师）1名
-							<img class="img2" src="/static/images/icon_down02.png" alt="" >
+					<li v-for="(item,index) in articleList" :key="index">
+						<h4 @click="detail($event,item.id)">
+							<img class="img1" src="/static/images/icon_user.png" alt="">{{item.title}}
+							<img class="img2" style="transform:rotate(180deg)" src="/static/images/icon_down02.png" alt="" v-if="isShowA==item.id">
+							<img class="img2" src="/static/images/icon_down02.png" alt="" v-else>
 						</h4>
-						<div class="recruit-details">
-							<p class="mt30">
-								<span class="job-city">工作地点：上海</span>
-								<span class="job-time">发布时间：2017/05/01</span>
-							</p>
-							<h5>岗位职责：</h5>
-							<p>1，负责合作平台，商家关系维护与拓展，与大型平台，商家建立战略合作关系。</p>
-							<p>2，负责新平台，商家的引入。</p>
-							<p>3，充分挖掘平台，商家合作需求，解决对接问题并关注合作平台，商家生命周期，对合作平台，商家深耕细作，制定长期营销策略。</p>
-							<p>4，执行营销策略，对平台，商家贡献收入及平台，商家的满意度负责。</p>
-							<p>5，管理团队，提升团队效率及工作方法。</p>
-							<h5>任职要求：</h5>
-							<p>1，统招全日制大学本科及以上学历。</p>
-							<p>2，具有8年以上市场营销及客户服务经验，有定制化销售经验优先，电商等行业从业经验者优先。</p>
-							<p>3，具有5年以上营销团队管理，客户服务管理经验。</p>
-							<p>4，具有极强的客户服务意识，执行力，自我驱动力，较强的市场开拓能力，商务谈判能力。</p>
-						</div>
-					</li>
-					<li>
-						<h4>
-							<img class="img1" src="/static/images/icon_user.png" alt="" > 技术开发部（前端工程师）2名
-							<img class="img2" src="/static/images/icon_down02.png" alt="" >
-						</h4>
-						<div class="recruit-details">
-							<p class="mt30">
-								<span class="job-city">工作地点：上海</span>
-								<span class="job-time">发布时间：2017/05/01</span>
-							</p>
-							<h5>岗位职责：</h5>
-							<p>1，负责合作平台，商家关系维护与拓展，与大型平台，商家建立战略合作关系。</p>
-							<p>2，负责新平台，商家的引入。</p>
-							<p>3，充分挖掘平台，商家合作需求，解决对接问题并关注合作平台，商家生命周期，对合作平台，商家深耕细作，制定长期营销策略。</p>
-							<p>4，执行营销策略，对平台，商家贡献收入及平台，商家的满意度负责。</p>
-							<p>5，管理团队，提升团队效率及工作方法。</p>
-							<h5>任职要求：</h5>
-							<p>1，统招全日制大学本科及以上学历。</p>
-							<p>2，具有8年以上市场营销及客户服务经验，有定制化销售经验优先，电商等行业从业经验者优先。</p>
-							<p>3，具有5年以上营销团队管理，客户服务管理经验。</p>
-							<p>4，具有极强的客户服务意识，执行力，自我驱动力，较强的市场开拓能力，商务谈判能力。</p>
-						</div>
-					</li>
-					<li>
-						<h4>
-							<img class="img1" src="/static/images/icon_user.png" alt="" > 技术开发部（PHP工程师）2名
-							<img class="img2" src="/static/images/icon_down02.png" alt="" >
-						</h4>
-						<div class="recruit-details">
-							<p class="mt30">
-								<span class="job-city">工作地点：上海</span>
-								<span class="job-time">发布时间：2017/05/01</span>
-							</p>
-							<h5>岗位职责：</h5>
-							<p>1，负责合作平台，商家关系维护与拓展，与大型平台，商家建立战略合作关系。</p>
-							<p>2，负责新平台，商家的引入。</p>
-							<p>3，充分挖掘平台，商家合作需求，解决对接问题并关注合作平台，商家生命周期，对合作平台，商家深耕细作，制定长期营销策略。</p>
-							<p>4，执行营销策略，对平台，商家贡献收入及平台，商家的满意度负责。</p>
-							<p>5，管理团队，提升团队效率及工作方法。</p>
-							<h5>任职要求：</h5>
-							<p>1，统招全日制大学本科及以上学历。</p>
-							<p>2，具有8年以上市场营销及客户服务经验，有定制化销售经验优先，电商等行业从业经验者优先。</p>
-							<p>3，具有5年以上营销团队管理，客户服务管理经验。</p>
-							<p>4，具有极强的客户服务意识，执行力，自我驱动力，较强的市场开拓能力，商务谈判能力。</p>
-						</div>
+						<div class="recruit-details" v-show="isShowA==item.id" v-if="articleItem.articleData" v-html="articleItem.articleData.content"></div>
 					</li>
 				</ul>
 			</div>
@@ -110,12 +34,88 @@
 </template>
 
 <script>
+import api from '@api'
 import zHeader from '@/components/Header'
 import zFooter from '@/components/Footer'
 export default {
+	data() {
+		return {
+			isShowA: '',
+			categoryList: [],
+			articleList: [],
+			defaultCategoryId: '8deb06dab2384902a0c87081e41c6e14',
+			articleItem:{}
+		}
+	},
 	components: {
 		zHeader,
 		zFooter
+	},
+	mounted() {
+		this.fetchInitialData()
+	},
+	methods: {
+		async fetchInitialData() {
+			const config = {
+				categoryId: this.defaultCategoryId
+			}
+			api.get('/v1/category/list', config).then(response => {
+				if (response.status == 200 && response.data.code == 200) {
+					response.data.data.list.map((e, index) => {
+						e.isA = false
+						if (index % 3 === 0) {
+							if (index === 0) {
+								// e.class = 'active'
+								e.isA = true
+
+								this.category(e.id)
+							} else {
+								e.class = ''
+							}
+						} else {
+							e.class = 'ml40 mb20'
+						}
+					})
+					this.categoryList = response.data.data.list
+				}
+			});
+		},
+		category(id) {
+			//选中切换
+			this.categoryList.map((e, index) => {
+				e.isA = false
+				if (e.id === id)
+					e.isA = true
+			})
+
+			const config = {
+				categoryId: id,
+				pageNo: 1,
+				pageSize: 100
+			}
+			api.get('/v1/article/list', config).then(response => {
+				if (response.status == 200 && response.data.code == 200) {
+					response.data.data.list.map((e, index) => {
+						e.isA = false
+					})
+					this.articleList = response.data.data.list
+				}
+			});
+		},
+		detail(event, id) {
+			if (this.isShowA == id) {
+				this.isShowA = ''
+			} else {
+				this.isShowA = id
+			}
+
+			api.get('/v1/article/item', { id }).then(response => {
+				if (response.status == 200 && response.data.code == 200) {
+					this.articleItem = response.data.data
+				}
+			});
+			
+		}
 	}
 }
 </script>
@@ -143,6 +143,17 @@ export default {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*条件筛选*/
 
 .join-us-container .join-condition {
@@ -168,6 +179,17 @@ export default {
 	color: #fff;
 	background-color: #c9a96e;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*招聘信息*/
@@ -212,7 +234,7 @@ export default {
 }
 
 .join-us-container .join-recruit ul li .recruit-details {
-	display: none;
+	/*display: none;*/
 }
 
 .join-us-container .join-recruit ul li .recruit-details h5,
