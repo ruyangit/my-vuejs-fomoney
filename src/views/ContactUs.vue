@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-fff">
+    <div>
         <z-header goBack='true' headTitle="联系我们"></z-header>
         <div class="container contact-us-container">
             <div class="contact-banner"></div>

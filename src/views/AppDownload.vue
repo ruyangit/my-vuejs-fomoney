@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-fff">
+    <div>
         <z-header></z-header>
         <div class="container app-container">
             <div class="close-box">

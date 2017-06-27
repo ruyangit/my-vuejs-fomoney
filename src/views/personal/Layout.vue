@@ -1,17 +1,17 @@
 <template>
-	<div id="" class="bg-fff">
+	<div>
 		<z-header goBack='true' headTitle="我要贷款"></z-header>
 		<!--内容-->
 		<div class="container tong-common-container">
 			<!--tab导航-->
 			<div class="tab-box personal-tab-box clearfix">
-				<div @click="zTarg(index)" :class="item.isShow==true?'item fl active':'item fl'" v-for="(item,index) in hMenu" :key="index" >
+				<div @click="zTarg(index)" :class="item.isShow==true?'item fl active':'item fl'" v-for="(item,index) in hMenu" :key="index">
 					<span v-text="item.text"></span>
 					<div class="line"></div>
 				</div>
 			</div>
 			<div class="xing-box">
-				<transition name="fade">
+				<transition name="slide">
 					<router-view></router-view>
 				</transition>
 			</div>
@@ -25,23 +25,23 @@
 import zHeader from '@/components/Header'
 import zFooter from '@/components/Footer'
 export default {
-	data(){
+	data() {
 		return {
-			hMenu:[
+			hMenu: [
 				{
-					text:'星学贷',
-					url:'/personal/loansunlearn',
-					isShow:true
+					text: '星学贷',
+					url: '/personal/loansunlearn',
+					isShow: true
 				},
 				{
-					text:'星薪贷',
-					url:'/personal/loansunsalary',
-					isShow:false
+					text: '星薪贷',
+					url: '/personal/loansunsalary',
+					isShow: false
 				},
 				{
-					text:'星抵贷',
-					url:'/personal/loansunattived',
-					isShow:false
+					text: '星抵贷',
+					url: '/personal/loansunattived',
+					isShow: false
 				}
 			]
 		}
@@ -50,26 +50,26 @@ export default {
 		zHeader,
 		zFooter
 	},
-	methods:{
-		zTarg(index){
+	methods: {
+		zTarg(index) {
 			let rrto = this.$router
-			this.hMenu.map(function (v,i) {
-				if(i===index){
-					v.isShow=true
-					rrto.push({path:v.url})
-				}else{
-					v.isShow=false
+			this.hMenu.map(function (v, i) {
+				if (i === index) {
+					v.isShow = true
+					rrto.push({ path: v.url })
+				} else {
+					v.isShow = false
 				}
 			});
 		}
 	},
-	mounted(){
+	mounted() {
 		let rrph = this.$route.path
-		this.hMenu.map(function (v,i) {
-			if(v.url===rrph){
-				v.isShow=true
-			}else{
-				v.isShow=false
+		this.hMenu.map(function (v, i) {
+			if (v.url === rrph) {
+				v.isShow = true
+			} else {
+				v.isShow = false
 			}
 		});
 
@@ -77,6 +77,11 @@ export default {
 }
 </script>
 <style scoped>
-.personal-tab-box .item{width:2.3rem;}
-.xing-box{margin-bottom: 2rem;}
+.personal-tab-box .item {
+	width: 2.3rem;
+}
+
+.xing-box {
+	margin-bottom: 2rem;
+}
 </style>

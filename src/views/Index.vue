@@ -53,6 +53,7 @@
     <z-footer></z-footer>
   
     <!--贷款业务弹框-->
+    <transition name="fade">
     <div class="index-modal-box modal-load" v-show="al1">
       <h2>贷款业务</h2>
       <p>为了帮助个人及企业用户合理规划成本并且努力实现资料利用最大化，复星金服贷款业务以消费金融及供应链金融为两大主线。消费金融以健康，旅游，时尚消费，文化，居家，出行为场景，满足年轻用户品质生活的一站式需求；供应链金融是以产业为依托，深耕产业链，为其上下游企业提供流动性支持以及综合金融服务。</p>
@@ -63,7 +64,9 @@
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al1')">
     </div>
+    </transition>
     <!--财富管理弹框-->
+    <transition name="fade">
     <div class="index-modal-box modal-money" v-show="al2">
       <h2>财富管理</h2>
       <div class="bg-circle">
@@ -72,7 +75,9 @@
       <p>财富管理的基础是建立在对人和对文化的认同上的信任，复星金服以复星文化和投资理念为基础，以客户的需求为核心，综合考虑风险、收益、流动性、可行性等因素，借助保险、信托、离岸公司、证券化、结构性产品等金融工具，设计系统的、有效合理的整体财富架构。</p>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al2')">
     </div>
+    </transition>
     <!--金融科技弹框-->
+    <transition name="fade">
     <div class="index-modal-box modal-finance" v-show="al3">
       <h2>金融科技</h2>
       <p>作为复星金服高科技内核，金融科技事业部坚持以科技引领金融，打造“移动支付”、“大数据征信”、“新兴技术”三大核心，携手各业务板块不断开拓创新，探索互联网金融新业务模式。</p>
@@ -82,7 +87,7 @@
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al3')">
     </div>
-  
+    </transition>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div id="" class="bg-fff">
+    <div>
         <z-header goBack='true' headTitle="我要买车"></z-header>
         <!--内容-->
         <div class="container personal-buycar-container">

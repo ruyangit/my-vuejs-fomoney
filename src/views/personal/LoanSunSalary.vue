@@ -1,44 +1,35 @@
 <template>
-    <div id="" class="bg-fff">
-        <z-header goBack='true' headTitle="我要贷款"></z-header>
-        <!--内容-->
-        <div class="item xxind active">
-            <div class="banner"></div>
-            <div class="txt-content">
-                <h2>复星员工专享，快速批复，3天放款。</h2>
-                <h3>
-                    <label>贷款金额：</label>
-                    <span>1万元 ~ 5万元</span>
-                </h3>
-                <h3>
-                    <label>贷款期限：</label>
-                    <span>12个月</span>
-                </h3>
-                <h3>
-                    <label>参考利息：</label>
-                    <span>8% ~ 12%</span>
-                </h3>
-                <h3>
-                    <label>还款方式：</label>
-                    <span>等额本息</span>
-                </h3>
-                <p class="fs28">复星员工专属信用贷，审批快、无抵押。资料齐全后3日即可完成审批。</p>
-            </div>
-            <div class="btn-box">
-                <a class="btn" href="javascript:;">我要申请</a>
-            </div>
+    <!--内容-->
+    <div class="item xxind active">
+        <div class="banner"></div>
+        <div class="txt-content">
+            <h2>复星员工专享，快速批复，3天放款。</h2>
+            <h3>
+                <label>贷款金额：</label>
+                <span>1万元 ~ 5万元</span>
+            </h3>
+            <h3>
+                <label>贷款期限：</label>
+                <span>12个月</span>
+            </h3>
+            <h3>
+                <label>参考利息：</label>
+                <span>8% ~ 12%</span>
+            </h3>
+            <h3>
+                <label>还款方式：</label>
+                <span>等额本息</span>
+            </h3>
+            <p class="fs28">复星员工专属信用贷，审批快、无抵押。资料齐全后3日即可完成审批。</p>
+        </div>
+        <div class="btn-box">
+            <a class="btn" href="javascript:;">我要申请</a>
         </div>
     </div>
 </template>
 
 <script>
-import zHeader from '@/components/Header'
-import zFooter from '@/components/Footer'
 export default {
-    components: {
-        zHeader,
-        zFooter
-    }
 }
 </script>
 <style scoped>

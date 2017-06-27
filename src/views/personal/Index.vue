@@ -1,5 +1,5 @@
 <template>
-    <div id="">
+    <div>
         <z-header></z-header>
         <!--内容-->
         <div class="tong-container personal-container">
