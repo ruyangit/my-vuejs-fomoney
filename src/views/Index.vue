@@ -59,8 +59,8 @@
       <p>为了帮助个人及企业用户合理规划成本并且努力实现资料利用最大化，复星金服贷款业务以消费金融及供应链金融为两大主线。消费金融以健康，旅游，时尚消费，文化，居家，出行为场景，满足年轻用户品质生活的一站式需求；供应链金融是以产业为依托，深耕产业链，为其上下游企业提供流动性支持以及综合金融服务。</p>
       <img class="modal-img01" src="/static/images/modal_img01.png" alt="" >
       <div class="modal-btn-box clearfix">
-        <a class="fl" href="personal_load.html">消费金融 >></a>
-        <a class="fr" href="company_load.html">供应链金融 >></a>
+        <router-link to="/personal/loansunlearn" class="fl">消费金融 >></router-link>
+        <router-link to="/company/loanplatform" class="fr">供应链金融 >></router-link>
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al1')">
     </div>
@@ -83,7 +83,7 @@
       <p>作为复星金服高科技内核，金融科技事业部坚持以科技引领金融，打造“移动支付”、“大数据征信”、“新兴技术”三大核心，携手各业务板块不断开拓创新，探索互联网金融新业务模式。</p>
       <img class="modal-img03" src="/static/images/modal_img03.png" alt="" >
       <div class="modal-btn-box">
-        <a href="company_finance.html">体验金融科技服务 >></a>
+        <router-link to="/company/techcredit" >体验金融科技服务 >></router-link>
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al3')">
     </div>

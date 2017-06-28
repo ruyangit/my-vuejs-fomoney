@@ -12,24 +12,114 @@
             <p>汽车经销商：库存融资产品、试乘试驾产品</p>
             <p>经营性租赁公司：购车产品</p>
             <p>企业：清障车产品、牵引车产品</p>
-            <a class="btn" href="javascript:;">我要申请</a>
+            <a class="btn" href="javascript:;"   @click="isShow=!isShow">我要申请</a>
         </div>
         <div class="company-carlease-bg"></div>
+        <!--弹框-->
+        <transition name="fade">
+            <div class="apply-box" v-show="isShow">
+                <form @submit.prevent="validateBeforeSubmit('myform')" data-vv-scope="myform">
+                    <h2>租赁申请入口
+                        <img class="btn-close" src="/static/images/icon_close.png" alt="关闭" @click="isShow=!isShow">
+                    </h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="name">
+                                        <span>* </span>企业名称：</label>
+                                </td>
+                                <td>
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.companyName') }" v-validate="'required'" v-model="myform.companyName" type="text" placeholder="请输入企业名称" name="companyName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">
+                                        <span>* </span>名称：</label>
+                                </td>
+                                <td>
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入名称" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone">
+                                        <span>* </span>电话：</label>
+                                </td>
+                                <td>
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入电话" name="phone">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">备注（选填）：</label>
+                                </td>
+                                <td>
+                                    <textarea name='remarks' v-model="myform.remarks" placeholder="请控制在250个汉字以内"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input class="btn" type="submit" value="提交申请">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>* 请填写您的基本资料，提交申请后，我们会在1个工作日内和您联系！</p>
+                </form>
+            </div>
+        </transition>
     </div>
 </template>
 
 <script>
+import api from '@api'
 import zHeader from '@/components/Header'
 import zFooter from '@/components/Footer'
 export default {
+    data() {
+        return {
+            isShow: false,
+            myform: {
+                moduleType: '2101',
+                companyName: '',
+                name: '',
+                phone: '',
+                remarks: ''
+            }
+        }
+    },
     components: {
         zHeader,
         zFooter
+    },
+    created() {
+        this.defaultData = JSON.parse(JSON.stringify(this.myform));
+    },
+    methods: {
+        async validateBeforeSubmit(scope) {
+            this.$validator.validateAll(scope).then(result => {
+                if (result) {
+                    api.post('/v1/comcompany/save', this.myform).then(response => {
+                        if (response.status == 200 && response.data.code == 200) {
+                            alert('提交申请成功！');
+                            this.defaultData = Object.assign(this.myform, this.defaultData)
+                            this.isShow = false
+                        }
+                    });
+                } else {
+                    alert('请将表单填写完整！');
+                    return
+                }
+            }).catch(() => {
+            });
+
+        }
     }
 }
 </script>
 <style scoped>
-
 .company-carlease-container h2 {
     padding: 0.45rem 0 1rem;
     font-size: 0.32rem;
@@ -77,4 +167,5 @@ export default {
     right: 0;
     left: 0;
 }
+
 </style>

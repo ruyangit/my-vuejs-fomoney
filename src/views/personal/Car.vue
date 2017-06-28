@@ -337,15 +337,4 @@ footer.personal-buycar-pb125 {
     line-height: 1.3;
 }
 
-
-
-
-
-/*弹框*/
-
-.apply-box form table tr td input[type="text"],
-.apply-box form table tr td select,
-.apply-box form table tr td textarea {
-    margin-left: 0.2rem;
-}
 </style>
