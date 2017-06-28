@@ -23,13 +23,23 @@
             <p class="fs28">复星员工专属信用贷，审批快、无抵押。资料齐全后3日即可完成审批。</p>
         </div>
         <div class="btn-box">
-            <a class="btn" href="javascript:;">我要申请</a>
+            <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>
         </div>
+        <PersonalLoanBox v-model="myModel" title="申请星薪贷" moduleType="1002"></PersonalLoanBox>
     </div>
 </template>
 
 <script>
+import PersonalLoanBox from '@/components/PersonalLoanBox'
 export default {
+    data() {
+        return {
+            myModel: false
+        }
+    },
+    components:{
+        PersonalLoanBox
+    }
 }
 </script>
 <style scoped>

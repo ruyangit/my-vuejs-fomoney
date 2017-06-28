@@ -23,13 +23,23 @@
             <p>主要针对上海、广州等范围内企业或的人的住宅房屋抵押贷款，提供简便、快速的审批流程，2个工作日的审批，7天放款。</p>
         </div>
         <div class="btn-box">
-            <a class="btn" href="javascript:;">我要申请</a>
+            <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>
         </div>
+        <PersonalLoanBox v-model="myModel" title="申请星抵贷" moduleType="1003"></PersonalLoanBox>
     </div>
 </template>
 
 <script>
+import PersonalLoanBox from '@/components/PersonalLoanBox'
 export default {
+    data() {
+        return {
+            myModel: false
+        }
+    },
+    components:{
+        PersonalLoanBox
+    }
 }
 </script>
 <style scoped>
