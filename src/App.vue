@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import './utils/validator.js'
 export default {
   name: 'app'
 }
