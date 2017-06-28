@@ -11,15 +11,25 @@
             <p>3）降低审批成本，提升审批效率</p>
         </div>
         <div class="btn-box">
-            <a class="btn" href="javascript:;">我要申请</a>
+            <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>
         </div>
+        <CompanyTechBox v-model="myModel" title="云风控平台" moduleType="2202"></CompanyTechBox>
     </div>
 </template>
 
 <script>
+import CompanyTechBox from '@/components/CompanyTechBox'
 export default {
+    data() {
+        return {
+            myModel: false
+        }
+    },
+    components:{
+        CompanyTechBox
+    }
 }
-</script>
+</script>>
 <style scoped>
 .xing-box .yfkpt .banner {
     width: 7.5rem;

@@ -9,15 +9,23 @@
                     <tbody>
                         <tr>
                             <td>
-                                <label for="name">您的姓名：</label>
+                                <label for="companyName">企业名称：</label>
                             </td>
                             <td>
-                                <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入名称" name="name">
+                                <input :class="{'input': true, 'is-danger': errors.has('myform.companyName') }" v-validate="'required'" v-model="myform.companyName" type="text" placeholder="请输入企业名称" name="companyName">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="phone">手机号：</label>
+                                <label for="name">联系人：</label>
+                            </td>
+                            <td>
+                                <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入联系人" name="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">电话：</label>
                             </td>
                             <td>
                                 <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入电话" name="phone">
@@ -25,40 +33,15 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="gender">性别：</label>
+                                <label for="cooperative">合作业务：</label>
                             </td>
                             <td>
-                                <select name="sex" v-model="myform.sex">
-                                    <!--<option value="">---请选择性别---</option>-->
-                                    <option value="1">男士</option>
-                                    <option value="2">女士</option>
+                                <select name="cooperative" v-model="myform.cooperative">
+                                    <option value="2201">企业征信解决方案</option>
+                                    <option value="2202">云风控解决方案</option>
+                                    <option value="2203">反欺诈解决方案</option>
+                                    <option value="2204">信用风险解决方案</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="city">城市：</label>
-                            </td>
-                            <td>
-                                <input type="text" name="city" v-model="myform.city">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="occupation">职业：</label>
-                            </td>
-                            <td>
-                                <input type="text" name="profession" v-model="myform.profession">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="assets">资产情况：</label>
-                            </td>
-                            <td>
-                                <label v-for="(item,index) in array" :key="index">
-                                    <input type="checkbox" v-model="checklist" :value="item"> {{item}}
-                                </label>
                             </td>
                         </tr>
                         <tr>
@@ -110,11 +93,10 @@ export default {
             ],
             myform: {
                 moduleType: this.moduleType,
+                companyName: '',
                 name: '',
-                sex: '1',
+                cooperative: this.moduleType,
                 phone: '',
-                city: '',
-                profession: '',
                 remarks: ''
             }
         }
@@ -134,17 +116,8 @@ export default {
         },
         async validateBeforeSubmit(scope) {
             this.$validator.validateAll(scope).then(result => {
-                var capital = "";
-                if(this.checklist){
-                    this.checklist.map(e=>{
-                        capital+=','+e
-                    });
-                }
-                if(capital.length>0){
-                    this.myform.capital = capital.substring(1);
-                }
                 if (result) {
-                    api.post('/v1/compersonal/save', this.myform).then(response => {
+                    api.post('/v1/comcompany/save', this.myform).then(response => {
                         if (response.status == 200 && response.data.code == 200) {
                             alert('提交申请成功！');
                             this.defaultData = Object.assign(this.myform, this.defaultData)

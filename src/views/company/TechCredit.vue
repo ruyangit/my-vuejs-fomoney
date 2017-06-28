@@ -12,15 +12,25 @@
             <p>4）发掘潜在商机</p>
         </div>
         <div class="btn-box">
-            <a class="btn" href="javascript:;">我要申请</a>
+            <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>
         </div>
+        <CompanyTechBox v-model="myModel" title="企业征信" moduleType="2201"></CompanyTechBox>
     </div>
 </template>
 
 <script>
+import CompanyTechBox from '@/components/CompanyTechBox'
 export default {
+    data() {
+        return {
+            myModel: false
+        }
+    },
+    components:{
+        CompanyTechBox
+    }
 }
-</script>
+</script>>
 <style scoped>
 .xing-box .qyzx .banner {
     width: 7.5rem;

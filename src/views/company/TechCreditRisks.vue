@@ -13,15 +13,25 @@
             <p>5）差异化的催收策略，降低催收成本</p>
         </div>
         <div class="btn-box">
-            <a class="btn" href="javascript:;">我要申请</a>
+            <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>
         </div>
+        <CompanyTechBox v-model="myModel" title="信用风险管理" moduleType="2204"></CompanyTechBox>
     </div>
 </template>
 
 <script>
+import CompanyTechBox from '@/components/CompanyTechBox'
 export default {
+    data() {
+        return {
+            myModel: false
+        }
+    },
+    components:{
+        CompanyTechBox
+    }
 }
-</script>
+</script>>
 <style scoped>
 .xing-box .xyfxgl .banner {
     width: 7.5rem;
