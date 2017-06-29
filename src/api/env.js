@@ -9,7 +9,8 @@
 
 let baseUrl = 'http://10.166.10.26:8181/api'; 
 let routerMode = 'history';
-let imgBaseUrl = '';
+let imgBaseUrl = 'http://10.166.10.26:8181';
+let fileBaseUrl = 'http://10.166.10.26:8181';
 
 
 if (process.env.NODE_ENV == 'development') {
@@ -21,4 +22,5 @@ export {
 	baseUrl,
 	routerMode,
 	imgBaseUrl,
+	fileBaseUrl,
 }

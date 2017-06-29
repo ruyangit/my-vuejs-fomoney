@@ -1,61 +1,46 @@
 <template>
-    <div>
-       draft
+    <div class="data-item news-data data-active">
+        <router-link :to="'/news/data/draft/detail/'+item.id" class="every-box" v-for="(item,index) in draftList" :key="index">
+            <img :src="item.image" alt="">
+            <div class="txt-intro" v-text="item.title"></div>
+        </router-link>
     </div>
 </template>
 
 <script>
-import zHeader from '@/components/Header'
-import zFooter from '@/components/Footer'
+import api from '@api'
+import { imgBaseUrl } from '@/api/env'
 export default {
     data() {
         return {
-            hMenu: [
-                {
-                    text: '集团新闻',
-                    url: '/news/groupnews',
-                    isShow: true
-                },
-                {
-                    text: '媒体报道',
-                    url: '/news/medianews',
-                    isShow: false
-                },
-                {
-                    text: '资料专区',
-                    url: '/news/data/draft',
-                    isShow: false
-                }
-            ]
+            draftList: [],
         }
     },
     components: {
-        zHeader,
-        zFooter
     },
     methods: {
-        zTarg(index) {
-            let rrto = this.$router
-            this.hMenu.map(function (v, i) {
-                if (i === index) {
-                    v.isShow = true
-                    rrto.push({ path: v.url })
-                } else {
-                    v.isShow = false
+        async fetchInitialData() {
+            const config = {
+                pageNo: 1,
+                pageSize: 30,
+                categoryId: '9ba6835925ea4904a1bf0bda8f40314d'
+            }
+            api.get('/v1/article/list', config).then(response => {
+                if (response.status == 200 && response.data.code == 200) {
+                    let list = response.data.data.list
+                    list.map(e => {
+                        e.image = imgBaseUrl + e.image;
+                        e.originalImage = imgBaseUrl + e.originalImage;
+                        // e.viewDate = e.updateDate.split(' ')[0]
+                    })
+                    this.draftList = list
                 }
             });
+
         }
     },
     mounted() {
-        let rrph = this.$route.path
-        this.hMenu.map(function (v, i) {
-            if (v.url === rrph) {
-                v.isShow = true
-            } else {
-                v.isShow = false
-            }
-        });
-
+        this.fetchInitialData()
     }
 }
 </script>

@@ -37,9 +37,12 @@ const GroupNews = r => require.ensure([], () => r(require('@/views/news/GroupNew
 const MediaNews = r => require.ensure([], () => r(require('@/views/news/MediaNews')), 'news')
 const DataLayout = r => require.ensure([], () => r(require('@/views/news/DataLayout')), 'news')
 const DataDraft = r => require.ensure([], () => r(require('@/views/news/DataDraft')), 'news')
+const DataDraftDetail = r => require.ensure([], () => r(require('@/views/news/DataDraftDetail')), 'news')
 const DataVideo = r => require.ensure([], () => r(require('@/views/news/DataVideo')), 'news')
 const DataDoc = r => require.ensure([], () => r(require('@/views/news/DataDoc')), 'news')
 const DataImg = r => require.ensure([], () => r(require('@/views/news/DataImg')), 'news')
+const DataImgDetail = r => require.ensure([], () => r(require('@/views/news/DataImgDetail')), 'news')
+const NewsDetail = r => require.ensure([], () => r(require('@/views/news/Detail')), 'news')
 
 const JoinUs = r => require.ensure([], () => r(require('@/views/JoinUs')), 'joinus')
 const ContactUs = r => require.ensure([], () => r(require('@/views/ContactUs')), 'contactus')
@@ -168,7 +171,18 @@ export default new Router({
         }
       ]
     },
-
+    {
+      path: '/news/detail/:id',
+      component: NewsDetail
+    },
+    {
+      path: '/news/data/draft/detail/:id',
+      component: DataDraftDetail
+    },
+    {
+      path: '/news/data/img/detail/:id',
+      component: DataImgDetail
+    },
     {
       path: '/joinus',
       component: JoinUs
