@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<z-header goBack='true' headTitle="新闻中心"></z-header>
+		<z-header goBack='/' headTitle="新闻中心"></z-header>
 		<!--内容-->
 		<div class="container tong-common-container newscenter-container">
 			<!--tab导航-->

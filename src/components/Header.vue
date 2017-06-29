@@ -2,7 +2,7 @@
     <div>
         <!--头部-->
         <header class="clearfix">
-            <a class="icon-back fl" v-if="goBack" @click="$router.go(-1)">
+            <a class="icon-back fl" v-if="goBack" @click="goBackUri()">
                 <img src="/static/images/icon_back.png" alt="返回">
             </a>
             <router-link to="/" class="logo fl" v-else>
@@ -50,8 +50,15 @@ export default {
         goTo(url) {
             this.isShow = !this.isShow;
             this.$router.push({ path: url })
-        }
+        },
+        goBackUri() {
+            if (this.goBack==='true'){
+                this.$router.go(-1)
+            }else{
+                this.$router.push({ path: this.goBack })
+            }
     }
+}
 }
 </script>
 <style>

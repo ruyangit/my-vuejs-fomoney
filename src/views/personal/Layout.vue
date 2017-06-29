@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<z-header goBack='true' headTitle="我要贷款"></z-header>
+		<z-header goBack='/personal' headTitle="我要贷款"></z-header>
 		<!--内容-->
 		<div class="container tong-common-container">
 			<!--tab导航-->
