@@ -17,6 +17,7 @@ const CompanyCar = r => require.ensure([], () => r(require('@/views/company/Car'
 const CompanyLayout = r => require.ensure([], () => r(require('@/views/company/Layout')), 'company')
 const CompanyLoanPlatform = r => require.ensure([], () => r(require('@/views/company/LoanPlatform')), 'company')
 const CompanyLoanFactoring = r => require.ensure([], () => r(require('@/views/company/LoanFactoring')), 'company')
+const CompanyStarBusiness = r => require.ensure([], () => r(require('@/views/company/StarBusiness')), 'company')
 
 const CompanyTechLayout = r => require.ensure([], () => r(require('@/views/company/TechLayout')), 'company')
 const CompanyTechCheat = r => require.ensure([], () => r(require('@/views/company/TechCheat')), 'company')
@@ -51,149 +52,147 @@ const AppDownload = r => require.ensure([], () => r(require('@/views/AppDownload
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      component: Index
-    },
-    {
-      path: '/personal',
-      component: Personal
-    },
-    {
-      path: '/personal/car',
-      component: PersonalCar
-    },
-    {
-      path: '/personal',
-      component: PersonalLayout,
-      children: [
-        {
-          path: 'loansunlearn',
-          component: PersonalLoanSunLearn
+    routes: [{
+            path: '/',
+            component: Index
         },
         {
-          path: 'loansunsalary',
-          component: PersonalLoanSunSalary
+            path: '/personal',
+            component: Personal
         },
         {
-          path: 'loansunattived',
-          component: PersonalLoanSunAttived
+            path: '/personal/car',
+            component: PersonalCar
+        },
+        {
+            path: '/personal',
+            component: PersonalLayout,
+            children: [{
+                    path: 'loansunlearn',
+                    component: PersonalLoanSunLearn
+                },
+                {
+                    path: 'loansunsalary',
+                    component: PersonalLoanSunSalary
+                },
+                {
+                    path: 'loansunattived',
+                    component: PersonalLoanSunAttived
+                }
+            ]
+        },
+        {
+            path: '/company',
+            component: Company
+        },
+        {
+            path: '/company/car',
+            component: CompanyCar
+        },
+        {
+            path: '/company',
+            component: CompanyLayout,
+            children: [{
+                    path: 'loanplatform',
+                    component: CompanyLoanPlatform
+                },
+                {
+                    path: 'loanfactoring',
+                    component: CompanyLoanFactoring
+                },
+                {
+                    path: 'starbusiness',
+                    component: CompanyStarBusiness
+                }
+            ]
+        },
+        {
+            path: '/company',
+            component: CompanyTechLayout,
+            children: [{
+                    path: 'techcheat',
+                    component: CompanyTechCheat
+                },
+                {
+                    path: 'techcredit',
+                    component: CompanyTechCredit
+                },
+                {
+                    path: 'techcreditrisks',
+                    component: CompanyTechCreditRisks
+                },
+                {
+                    path: 'techrisk',
+                    component: CompanyTechRisk
+                }
+            ]
+        },
+        {
+            path: '/enter',
+            component: Enter,
+        },
+        { path: '/enter/aboutus', component: EnterAboutUs },
+        { path: '/enter/brandculture', component: EnterBrandCulture },
+        { path: '/enter/cooperativepartner', component: EnterCooperativePartner },
+        { path: '/enter/developmenthistory', component: EnterDevelopmentHistory },
+        { path: '/enter/leadershipteam', component: EnterLeadershipTeam },
+        {
+            path: '/news',
+            component: NewsLayout,
+            children: [{
+                    path: 'groupnews',
+                    component: GroupNews
+                },
+                {
+                    path: 'medianews',
+                    component: MediaNews
+                },
+                {
+                    path: 'data',
+                    component: DataLayout,
+                    children: [{
+                            path: 'draft',
+                            component: DataDraft
+                        },
+                        {
+                            path: 'video',
+                            component: DataVideo
+                        },
+                        {
+                            path: 'doc',
+                            component: DataDoc
+                        },
+                        {
+                            path: 'img',
+                            component: DataImg
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            path: '/news/detail/:id',
+            component: NewsDetail
+        },
+        {
+            path: '/news/data/draft/detail/:id',
+            component: DataDraftDetail
+        },
+        {
+            path: '/news/data/img/detail/:id',
+            component: DataImgDetail
+        },
+        {
+            path: '/joinus',
+            component: JoinUs
+        },
+        {
+            path: '/contactus',
+            component: ContactUs
+        },
+        {
+            path: '/appdownload',
+            component: AppDownload
         }
-      ]
-    },
-    {
-      path: '/company',
-      component: Company
-    },
-    {
-      path: '/company/car',
-      component: CompanyCar
-    },
-    {
-      path: '/company',
-      component: CompanyLayout,
-      children: [
-        {
-          path: 'loanplatform',
-          component: CompanyLoanPlatform
-        },
-        {
-          path: 'loanfactoring',
-          component: CompanyLoanFactoring
-        }
-      ]
-    },
-    {
-      path: '/company',
-      component: CompanyTechLayout,
-      children: [
-        {
-          path: 'techcheat',
-          component: CompanyTechCheat
-        },
-        {
-          path: 'techcredit',
-          component: CompanyTechCredit
-        },
-        {
-          path: 'techcreditrisks',
-          component: CompanyTechCreditRisks
-        },
-        {
-          path: 'techrisk',
-          component: CompanyTechRisk
-        }
-      ]
-    },
-    {
-      path: '/enter',
-      component: Enter,
-    },
-    { path: '/enter/aboutus', component: EnterAboutUs },
-    { path: '/enter/brandculture', component: EnterBrandCulture },
-    { path: '/enter/cooperativepartner', component: EnterCooperativePartner },
-    { path: '/enter/developmenthistory', component: EnterDevelopmentHistory },
-    { path: '/enter/leadershipteam', component: EnterLeadershipTeam },
-    {
-      path: '/news',
-      component: NewsLayout,
-      children: [
-        {
-          path: 'groupnews',
-          component: GroupNews
-        },
-        {
-          path: 'medianews',
-          component: MediaNews
-        },
-        {
-          path: 'data',
-          component: DataLayout,
-          children: [
-            {
-              path: 'draft',
-              component: DataDraft
-            },
-            {
-              path: 'video',
-              component: DataVideo
-            },
-            {
-              path: 'doc',
-              component: DataDoc
-            },
-            {
-              path: 'img',
-              component: DataImg
-            },
-          ]
-        }
-      ]
-    },
-    {
-      path: '/news/detail/:id',
-      component: NewsDetail
-    },
-    {
-      path: '/news/data/draft/detail/:id',
-      component: DataDraftDetail
-    },
-    {
-      path: '/news/data/img/detail/:id',
-      component: DataImgDetail
-    },
-    {
-      path: '/joinus',
-      component: JoinUs
-    },
-    {
-      path: '/contactus',
-      component: ContactUs
-    },
-    {
-      path: '/appdownload',
-      component: AppDownload
-    }
-  ]
+    ]
 })

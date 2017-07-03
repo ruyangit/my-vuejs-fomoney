@@ -29,9 +29,14 @@ export default {
 		return {
 			hMenu:[
 				{
+					text:'星商贷',
+					url:'/company/starbusiness',
+					isShow:true
+				},
+				{
 					text:'平台贷',
 					url:'/company/loanplatform',
-					isShow:true
+					isShow:false
 				},
 				{
 					text:'保理业务',
@@ -72,6 +77,6 @@ export default {
 }
 </script>
 <style scoped>
-.company-tab-box .item{width:3.45rem;}
+.company-tab-box .item{width:2.3rem;}
 .xing-box{margin-bottom: 2rem;}
 </style>
