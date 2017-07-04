@@ -1,6 +1,6 @@
 <template>
     <div>
-        <z-header goBack='true' headTitle="走进星航"></z-header>
+        <z-header goBack='true' headTitle="走进金服"></z-header>
         <!--内容-->
         <div class="container enter-common-container enter-cooperative-container">
             <h2>合作伙伴

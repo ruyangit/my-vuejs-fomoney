@@ -3,7 +3,7 @@
         <z-header></z-header>
         <!--内容-->
         <div class="container tong-container enter-index-container">
-            <h1>走进星航</h1>
+            <h1>走进金服</h1>
             <div class="function-box clearfix">
                 <div class="left fl">
                     <router-link to="/enter/aboutus" class="function function-bg1">

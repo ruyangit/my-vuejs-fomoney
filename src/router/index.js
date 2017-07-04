@@ -17,7 +17,8 @@ const CompanyCar = r => require.ensure([], () => r(require('@/views/company/Car'
 const CompanyLayout = r => require.ensure([], () => r(require('@/views/company/Layout')), 'company')
 const CompanyLoanPlatform = r => require.ensure([], () => r(require('@/views/company/LoanPlatform')), 'company')
 const CompanyLoanFactoring = r => require.ensure([], () => r(require('@/views/company/LoanFactoring')), 'company')
-const CompanyStarBusiness = r => require.ensure([], () => r(require('@/views/company/StarBusiness')), 'company')
+const CompanyLoanStarbusiness = r => require.ensure([], () => r(require('@/views/company/LoanStarbusiness')), 'company')
+const CompanyElectronicInvoice = r => require.ensure([], () => r(require('@/views/company/ElectronicInvoice')), 'company')
 
 const CompanyTechLayout = r => require.ensure([], () => r(require('@/views/company/TechLayout')), 'company')
 const CompanyTechCheat = r => require.ensure([], () => r(require('@/views/company/TechCheat')), 'company')
@@ -90,6 +91,10 @@ export default new Router({
             component: CompanyCar
         },
         {
+            path: '/company/electronicinvoice',
+            component: CompanyElectronicInvoice
+        },
+        {
             path: '/company',
             component: CompanyLayout,
             children: [{
@@ -101,8 +106,8 @@ export default new Router({
                     component: CompanyLoanFactoring
                 },
                 {
-                    path: 'starbusiness',
-                    component: CompanyStarBusiness
+                    path: 'loanstarbusiness',
+                    component: CompanyLoanStarbusiness
                 }
             ]
         },
