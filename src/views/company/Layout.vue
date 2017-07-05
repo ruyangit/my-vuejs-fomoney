@@ -30,7 +30,7 @@ export default {
 			hMenu:[
 				{
 					text:'星商贷',
-					url:'/company/starbusiness',
+					url:'/company/loanstarbusiness',
 					isShow:true
 				},
 				{

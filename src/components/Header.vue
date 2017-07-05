@@ -37,7 +37,7 @@ export default {
                 { url: '/', text: '首页' },
                 { url: '/personal', text: '个人通' },
                 { url: '/company', text: '企业通' },
-                { url: '/enter', text: '走进星航' },
+                { url: '/enter', text: '走进金服' },
                 { url: '/news/groupnews', text: '新闻中心' },
                 { url: '/joinus', text: '加入我们' },
                 { url: '/contactus', text: '联系我们' },

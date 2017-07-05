@@ -9,7 +9,7 @@
                 <span class="line"></span>
                 <p>助力复星ONE FOSUN战略</p>	
             </router-link>
-            <router-link to="/company/starbusiness" class="function-bg2 fr">
+            <router-link to="/company/loanstarbusiness" class="function-bg2 fr">
                 <h3>企业贷款</h3>
                 <span class="line"></span>
                 <p>助力企业成长！</p>
@@ -40,7 +40,7 @@ export default {
 }
 </script>
 <style scoped>
-.company-container{padding:0.8rem 0.4rem 0.5rem;}
+.company-container{padding:0.8rem 0.4rem 0.5rem;width: 7.5rem;margin: 0 auto}
 .company-container .function-bg1,.company-container .function-bg2,.company-container .function-bg3,.company-container .function-bg4{width:3.3rem;height:3.5rem;text-align: center;position: relative}
 .company-container .function-bg1{background:url(/static/images/company_index01.png) no-repeat center center;background-size:3.3rem 3.5rem;}
 .company-container .function-bg2{background:url(/static/images/company_index02.png) no-repeat center center;background-size:3.3rem 3.5rem;}

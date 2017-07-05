@@ -1,6 +1,6 @@
 <template>
     <div>
-        <z-header goBack='true' headTitle="走进星航"></z-header>
+        <z-header goBack='true' headTitle="走进金服"></z-header>
          <section class="development-history">
 	    	<div class="title">
 	    		<span class="fs32">发展历程</span>

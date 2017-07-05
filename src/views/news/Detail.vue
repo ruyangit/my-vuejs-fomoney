@@ -1,7 +1,7 @@
 <template>
     <div>
         <z-header goBack="true" headTitle="新闻中心"></z-header>
-        <div class="container news-details-container" style="width:100%; padding-left:15px; padding-right:15px;">
+        <div class="news-details-container" style="width:100%;">
             <h2 class="news-title fs32 c-1a1a1a text-center" v-text="articleItem.title"></h2>
 		    <h5><span class="time" v-text="articleItem.viewDate"></span><span class="browser ml40">浏览：{{articleItem.hits}}</span></h5>
             <div v-html="content"></div>
