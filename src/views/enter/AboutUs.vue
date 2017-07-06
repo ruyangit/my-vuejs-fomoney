@@ -158,5 +158,5 @@ export default {
 .modal-cfzl .img-cfzl6{width:1.43rem;height:0.32rem }
 .modal-cfzl .img-cfzl7{width:1.37rem;height:0.4rem }
 .modal-common h2{font-size:0.36rem;line-height:1;padding:0.2rem 0 0.9rem;}
-.modal-common p{padding:0rem 1.26rem;}	
+.modal-common p{padding:0rem 1.26rem;text-align: left}	
 </style>

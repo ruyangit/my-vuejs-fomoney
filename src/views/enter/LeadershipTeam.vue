@@ -207,5 +207,6 @@ export default {
 .modal-common-leader p {
     padding: 0.3rem 0.64rem;
     line-height: 1.5;
+    text-align: left;
 }
 </style>
