@@ -217,12 +217,12 @@ export default {
   text-align: center;
   color: #fff;
   font-size: 0.2rem;
+  box-shadow:0 2px 0 #dbdbdb; 
 }
 
 .index-container .function-box li a img {
   width: 0.6rem;
-  height: 0.6rem;
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
 }
 
 
