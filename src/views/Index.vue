@@ -32,7 +32,7 @@
           <li @click="zDetarget('al1')">
             <a class="load-serve" href="javascript:;">
               <img src="/static/images/icon_daikuan.png" alt="贷款业务">
-              <h3>贷款业务</h3>
+              <h3>信贷业务</h3>
             </a>
           </li>
           <li @click="zDetarget('al2')">
@@ -55,7 +55,7 @@
     <!--贷款业务弹框-->
     <transition name="fade">
     <div class="index-modal-box modal-load" v-show="al1">
-      <h2>贷款业务</h2>
+      <h2>信贷业务</h2>
       <p>为了帮助个人及企业用户合理规划成本并且努力实现资料利用最大化，复星金服贷款业务以消费金融及供应链金融为两大主线。消费金融以健康，旅游，时尚消费，文化，居家，出行为场景，满足年轻用户品质生活的一站式需求；供应链金融是以产业为依托，深耕产业链，为其上下游企业提供流动性支持以及综合金融服务。</p>
       <img class="modal-img01" src="/static/images/modal_img01.png" alt="" >
       <div class="modal-btn-box clearfix">
@@ -217,12 +217,12 @@ export default {
   text-align: center;
   color: #fff;
   font-size: 0.2rem;
+  box-shadow:0 2px 0 #dbdbdb; 
 }
 
 .index-container .function-box li a img {
   width: 0.6rem;
-  height: 0.6rem;
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
 }
 
 
