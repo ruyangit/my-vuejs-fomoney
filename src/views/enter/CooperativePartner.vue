@@ -15,68 +15,78 @@
                             <ul class="clearfix">
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner01.png" alt="复地" style="width:1.7rem;height:0.26rem;">
+                                        <img src="/static/images/en_partner20.png" alt="ASTON MARTIN" style="width:1.7rem;height:0.69rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner02.png" alt="复星医院" style="width:1.59rem;height:0.37rem;">
+                                        <img src="/static/images/en_partner21.png" alt="宝马" style="width:0.65rem;height:0.65rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a class="border-right-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner03.png" alt="复星保德信" style="width:1.41rem;height:0.43rem;">
+                                        <img src="/static/images/en_partner22.png" alt="奔驰" style="width:0.73rem;height:0.64rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner06.png" alt="老庙黄金" style="width:1.73rem;height:0.36rem;">
+                                        <img src="/static/images/en_partner23.png" alt="钢银" style="width:1.07rem;height:0.46rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner07.png" alt="爱必侬" style="width:1.18rem;height:0.49rem;">
+                                        <img src="/static/images/en_partner24.png" alt="FERO汇融" style="width:1.39rem;height:0.26rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a class="border-right-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner08.png" alt="构家" style="width:1.19rem;height:0.37rem;">
+                                        <img src="/static/images/en_partner25.png" alt="汇通租赁、广汇汽车租赁" style="width:1.87rem;height:0.35rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner11.png" alt="星堡" style="width:1.56rem;height:0.66rem;">
+                                        <img src="/static/images/en_partner26.png" alt="特斯拉" style="width:0.59rem;height:0.76rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner12.png" alt="星泓资本" style="width:0.91rem;height:0.74rem;">
+                                        <img src="/static/images/en_partner27.png" alt="天天基金网" style="width:1.5rem;height:0.28rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a class="border-right-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner13.png" alt="星浩资本" style="width:1.32rem;height:0.4rem;">
+                                        <img src="/static/images/en_partner28.png" alt="信隆行" style="width:1.43rem;height:0.41rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner29.png" alt="药师帮" style="width:1.24rem;height:0.55rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner30.png" alt="aFOCUS" style="width:1.05rem;height:0.62rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner31.png" alt="亚马逊" style="width:1.3rem;height:0.56rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a class="border-bottom-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner16.png" alt="onelink" style="width:1.42rem;height:0.51rem;">
+                                        <img src="/static/images/en_partner32.png" alt="Jeep" style="width:1.32rem;height:0.53rem;">
                                     </a>
                                 </li>
                                 <li>
                                     <a class="border-bottom-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner17.png" alt="阳光印网" style="width:1.35rem;height:0.44rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="border-right-none border-bottom-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner18.png" alt="德邦证券" style="width:1.62rem;height:0.42rem;">
+                                        <img src="/static/images/en_partner33.png" alt="MOLBASE" style="width:1.28rem;height:0.36rem;">
                                     </a>
                                 </li>
                             </ul>
                         </swiper-slide>
                         <swiper-slide class="swiper-slide">
-                            <ul class="clearfix">
+                            <!--<ul class="clearfix">
                                 <li>
                                     <a href="javascript:void(0);">
                                         <img src="/static/images/en_partner05.png" alt="豫园商城" style="width:1.36rem;height:0.43rem;">
@@ -112,7 +122,7 @@
                                         <img src="/static/images/en_partner19.png" alt="德邦基金" style="width:1.62rem;height:0.42rem;">
                                     </a>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </swiper-slide>
                     </swiper>
                     <!-- 左右滑动按钮 -->

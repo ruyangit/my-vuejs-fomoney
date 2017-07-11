@@ -50,8 +50,8 @@ export default {
 }
 </script>
 <style scoped>
-.data-item{margin-top: 1.1rem;overflow: hidden;padding-left: 0.6rem}
-.every-box{display:block;width:2.9rem;position:relative;margin-bottom:0.3rem;float: left;margin-left:0.15rem}
-.every-box img{width:2.9rem;}
-.every-box .txt-intro{color:#fff;height:0.6rem;line-height:0.6rem;background-color:rgba(0,0,0,.5);position:absolute;bottom:0;left:0;padding-left:0.2rem;font-size:0.24rem;width:2.9rem;}
+.data-item{margin-top: 1.1rem;overflow: hidden;padding:0 0.15rem}
+.every-box{display:block;width:3.3rem;height:2.42rem;position:relative;margin:0 0.15rem 0.3rem 0.15rem;float: left;}
+.every-box img{width:3.3rem;height:2.42rem;}
+.every-box .txt-intro{color:#fff;height:0.6rem;line-height:0.6rem;background-color:rgba(0,0,0,.5);position:absolute;bottom:0;left:0;padding-left:0.2rem;font-size:0.24rem;width:3.3rem;}
 </style>
