@@ -3,7 +3,7 @@
     <div class="item xxd active">
         <div class="banner"></div>
         <div class="txt-content">
-            <h2>你负责学习，钱是我们的事，2天出款150万。</h2>
+            <h2>星学贷，妈妈再也不用担心我的学习！(2天出款150万)</h2>
             <h3>
                 <label>贷款金额：</label>
                 <span>不超过150万元</span>
