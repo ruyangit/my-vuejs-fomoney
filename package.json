@@ -16,6 +16,7 @@
     "vue-awesome-swiper": "^2.5.0",
     "vue-meta": "^1.0.4",
     "vue-router": "^2.3.1",
+    "vue-video-player": "^3.1.4",
     "vuex": "^2.3.1",
     "vuex-router-sync": "^4.2.0"
   },

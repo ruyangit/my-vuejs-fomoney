@@ -5,12 +5,15 @@ import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VeeValidate from 'vee-validate'
+import VideoPlayer from 'vue-video-player'
 
 Vue.config.productionTip = false
 
 Vue.use(VueAwesomeSwiper)
 
 Vue.use(VeeValidate)
+
+Vue.use(VideoPlayer)
 
 /* eslint-disable no-new */
 new Vue({
