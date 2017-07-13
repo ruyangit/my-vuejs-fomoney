@@ -25,10 +25,11 @@
                     </a>
                 </li>
                 <li @click="zDetarget('al3')">
-                    <a class="leader-wangjunjie" href="javascript:;">
+                    <a class="leader-liupeng" href="javascript:;">
                         <div class="txt-intro">
-                            <h3>王俊杰</h3>
+                            <h3>刘鹏</h3>
                             <h5>复星金服总裁助理</h5>
+                            <h5>市场与客户服务部总经理</h5>
                         </div>
                     </a>
                 </li>
@@ -38,6 +39,15 @@
                             <h3>袁伟民</h3>
                             <h5>复星金服总裁助理</h5>
                             <h5>科技开发与管理部总经理</h5>
+                        </div>
+                    </a>
+                </li>
+                <li @click="zDetarget('al5')">
+                    <a class="leader-wangjunjie" href="javascript:;">
+                        <div class="txt-intro">
+                            <h3>王俊杰</h3>
+                            <h5>复星金服总裁助理</h5>
+                            <h5>创富融资租赁（上海）有限公司总裁</h5>
                         </div>
                     </a>
                 </li>
@@ -60,24 +70,34 @@
                 <img src="/static/images/leader_shenzhihua.jpg" alt="申志华">
                 <h2>申志华</h2>
                 <h5>复星金服执行总裁</h5>
-                <p></p>
+                <p>中国人民银行总行征信中心特聘专家；注册金融分析师(CFA)；并于2015年入选上海市千人计划。申志华先生曾任中国平安银行零售风险技术总监兼大数据决策管理部总经理、中国民生银行风险管理部副总经理、美国富国银行风险管理部副总裁、美国运通银行信用卡风险管理部高级研究员等职。申志华先生长期从事数据挖掘、商业银行风险管理、中小企业金融服务、量化模型、信贷工厂建设等工作。申志华先生拥有美国加州大学伯克利分校经济学博士和统计学硕士学位，多次在美国世界一流的计量经济学和经济学刊物发表论文。</p>
             </div>
         </transition>
-        <transition name="fade">
+         <transition name="fade">
             <div class="enter-alert-details modal-common-leader" v-show="al3" @click="zDetarget('al3')">
-                <img src="/static/images/leader_wangjunjie.jpg" alt="王俊杰">
-                <h2>王俊杰</h2>
+                <img src="/static/images/leader_liupeng.jpg" alt="刘鹏">
+                <h2>刘鹏</h2>
                 <h5>复星金服总裁助理</h5>
-                <p></p>
+                <h5>市场与客户服务部总经理</h5>
+                <p>刘鹏先生先后在中国工商银行天津分行、中国建设银行总行、中国银联总公司、上海银行总行、万达金融集团、万达网络科技集团工作多年，金融工作经验丰富，曾多年在商业银行和万达集团任高级管理职位，其主持开发的金融产品和主持策划开展的大型营销活动先后获得十多次业内专业奖项。在学术方面，刘鹏先生著作出版《银行卡产品研发和客户忠诚度管理》、合著出版《银行卡服务营销理论与实务》。</p>
             </div>
-        </transition>
+        </transition>        
         <transition name="fade">
             <div class="enter-alert-details modal-common-leader modal-leader-guxiaoxu" v-show="al4" @click="zDetarget('al4')">
                 <img src="/static/images/leader_yuanweimin.jpg" alt="袁伟民">
                 <h2>袁伟民</h2>
                 <h5>复星金服总裁助理</h5>
                 <h5>科技开发与管理部总经理</h5>
-                <p></p>
+                <p>二十年金融和IT行业工作经验，长期负责国内金融相关公司的战略规划、业务运营、系统研发和相关公司管理工作。曾主导并参与多个大型交易系统、证券业务系统的建设和实施，如陆金所金融资产交易平台LFEX、平安交易所金融资产和商品交易系统、上海证券交易所NGTS新一代交易系统、上海期货交易所NGES新一代交易系统、上海期货交易所电子仓单系统、中国证券登记结算公司ACTS咨询服务项目等。从2011年开始，长期负责大型互联网移动APP和核心金融业务系统的统一运营、研发和运维和安全管理工作。</p>
+            </div>
+        </transition>
+        <transition name="fade">
+            <div class="enter-alert-details modal-common-leader" v-show="al5" @click="zDetarget('al5')">
+                <img src="/static/images/leader_wangjunjie.jpg" alt="王俊杰">
+                <h2>王俊杰</h2>
+                <h5>复星金服总裁助理</h5>
+                <h5>创富融资租赁（上海）有限公司总裁</h5>
+                <p>毕业于美国杜克大学MBA，注册金融分析师（CFA）。曾任汇丰银行深圳分行和武汉分行的副行长、麦肯锡管理咨询有限公司北京和上海分公司项目经理、科誉高瞻融资租赁有限公司首席财务官兼首席运营官、海航资本投资银行部总经理助理。2014年8月至今，任复星集团融资租赁发展部总经理。现为复星金服总裁助理兼创富融资租赁（上海）有限公司总裁。</p>
             </div>
         </transition>
     </div>
@@ -93,6 +113,7 @@ export default {
             al2: false,
             al3: false,
             al4: false,
+            al5: false,
         }
     },
     components: {
@@ -109,6 +130,8 @@ export default {
                 this.al3 = !this.al3
             } else if (al === "al4") {
                 this.al4 = !this.al4
+            } else if (al === "al5") {
+                this.al5 = !this.al5
             }
         }
     }
@@ -146,6 +169,11 @@ export default {
     background-size: 3.2rem 3.6rem;
 }
 
+.enter-leadership-container ul li a.leader-liupeng {
+    background: url(/static/images/leader_liupeng.jpg) no-repeat center center;
+    background-size: 3.2rem 3.6rem;
+}
+
 .enter-leadership-container ul li a.leader-wangjunjie {
     background: url(/static/images/leader_wangjunjie.jpg) no-repeat center center;
     background-size: 3.2rem 3.6rem;
@@ -158,7 +186,7 @@ export default {
 
 .enter-leadership-container ul li .txt-intro {
     width: 3.2rem;
-    height: 1.2rem;
+    height: 1.4rem;
     background-color: rgba(0, 0, 0, .6);
     text-align: center;
     position: absolute;
