@@ -3,9 +3,20 @@
 		<z-header goBack='true' headTitle="加入我们"></z-header>
 		<div class="container join-us-container">
 			<div class="join-banner">
-				<h3 class="fs32">简历请投递至wangw@fosun.com</h3>
-				<p class="fs24">邮件标题格式为“应聘职位名称-个人姓名”附件添加个人简历</p>
+				<h3 class="fs32">简历请投递至wangw@fosun.com</h3>				
 			</div>
+			<div class="join-content-txt">
+				<h5><span>选：以发展来吸引人</span><span>用：以业绩来考核人</span></h5>
+				<h5><span>育：以工作来培养人</span><span>留：以事业来凝聚人</span></h5>
+				<p class="mt40">“星星之火，可以燎原”</p>
+				<p>我们希望把复星金服的每一位员工都打造成一颗璀璨的明星。</p>
+				<p>我们的人才观：</p>
+				<p>复星金服视员工为企业最有价值的资产，高度重视人才的可持续</p>
+				<p>发展和培养。本着为公司战略、企业文化建设服务的理念，通过</p>
+				<p>帮助员工提升工作绩效和个人</p>
+				<p>能力，推动员工与公司的共同成长。</p>	
+				<div class="join-line mt40"></div>		
+			</div>	
 			<!--条件筛选-->
 			<div class="join-condition">
 				<ul class="clearfix">
@@ -27,7 +38,8 @@
 						<div class="recruit-details" v-show="isShowA==item.id" v-if="articleItem.articleData" v-html="articleItem.articleData.content"></div>
 					</li>
 				</ul>
-			</div>
+				<p class="fs24 text-center c-808080 mt10">邮件标题格式为“应聘职位名称-个人姓名”附件添加个人简历</p>
+			</div>			
 		</div>
 		<z-footer></z-footer>
 	</div>
@@ -126,9 +138,9 @@ export default {
 
 .join-us-container .join-banner {
 	background: url(/static/images/join_us_banner.jpg) no-repeat center center;
-	background-size: 7.5rem 2.4rem;
+	background-size: 7.5rem 1.8rem;
 	width: 7.5rem;
-	height: 2.4rem;
+	height: 1.8rem;
 	text-align: center;
 	color: #fff;
 }
@@ -139,7 +151,7 @@ export default {
 }
 
 .join-us-container .join-banner h3 {
-	padding-top: 0.82rem;
+	padding-top: 0.7rem;
 }
 
 
@@ -209,9 +221,9 @@ export default {
 	width: 6.9rem;
 	height: 0.6rem;
 	line-height: 0.6rem;
-	background-color: #ccc;
+	background-color: #c9a96e;
 	font-size: 0.24rem;
-	color: #1a1a1a;
+	color: #fff;
 	margin-top: 0.3rem;
 	padding-left: 0.76rem;
 	position: relative;
@@ -250,5 +262,30 @@ export default {
 
 .join-us-container .join-recruit ul li .recruit-details h5 {
 	margin-top: 0.35rem;
+}
+
+/*加入文字*/
+.join-content-txt{
+	width: 7.5rem;
+	padding: 0.4rem 0.3rem 0;
+	text-align: center;	
+}
+.join-content-txt .join-line {
+	border-bottom: 1px solid #c9a96e;
+}
+.join-content-txt h5,.join-content-txt p {
+	line-height: 1.5;
+}
+.join-content-txt h5 span {
+	font-size: 0.3rem;
+	color: #333;
+	padding: 0 0.15rem;
+}
+.join-content-txt p {
+	font-size:0.24rem;
+	color: #808080;
+}
+.join-recruit ul li {
+	color: #808080;
 }
 </style>
