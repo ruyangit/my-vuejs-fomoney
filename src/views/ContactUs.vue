@@ -87,7 +87,7 @@ export default {
                     api.post('/v1/guestbook/save', this.myform).then(response => {
                         if(response.status==200&&response.data.code==200){
                             alert('咨询留言-提交成功！');
-                            this.defaultData = Object.assign(this.myform, this.defaultData);
+                            Object.assign(this.myform, this.defaultData);
                         }
                     });
                 }else{
