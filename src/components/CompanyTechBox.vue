@@ -31,7 +31,7 @@
                                 <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入电话" name="phone">
                             </td>
                         </tr>
-                        <tr>
+                        <!--<tr>
                             <td>
                                 <label for="cooperative">合作业务：</label>
                             </td>
@@ -43,7 +43,7 @@
                                     <option value="2204">信用风险解决方案</option>
                                 </select>
                             </td>
-                        </tr>
+                        </tr>-->
                         <tr>
                             <td>
                                 <label for="name">备注：</label>

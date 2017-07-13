@@ -32,7 +32,7 @@
 				<div class="mt70 mb100">
 					<div class="fs30 height30">2016年6月</div>
 					<p class="fs16 mt20 height20">商盟商务服务有限公司加入复星</p>
-					<div class="fs30 mt45 height30">2016年11月</div>
+					<div class="fs30 mt45 height30">2016年10月</div>
 					<p class="fs16 mt20 height20">复星钱包正式推出</p>
 					<div class="fs30 mt45 height30">2016年12月</div>
 					<p class="fs16 mt20 height20">星联保理进入医疗行业</p>
@@ -65,6 +65,7 @@
 			<div class="content-right">
 				<div>
 					<div class="fs30 height30">2017年3月</div>
+					<p class="fs16 mt20 height20">云通小贷获得优秀科技金融创新奖</p>
 					<p class="fs16 mt20 height20">量富征信、复星钱包入住“诚信上海APP”</p>
 				</div>
 				<div class="time mt30">

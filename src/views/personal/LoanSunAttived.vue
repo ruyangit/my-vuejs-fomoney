@@ -3,10 +3,10 @@
     <div class="item xdd active">
         <div class="banner"></div>
         <div class="txt-content">
-            <h2>住宅抵押类贷款，随借随还，最高1000万。</h2>
+            <h2>有房在手，世界可有！(借款最高1000万)</h2>
             <h3>
                 <label>贷款金额：</label>
-                <span>不超过1000万元</span>
+                <span>最高不超过1000万元</span>
             </h3>
             <h3>
                 <label>贷款期限：</label>
