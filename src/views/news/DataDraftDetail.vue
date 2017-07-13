@@ -1,16 +1,16 @@
 <template>
     <div>
         <z-header goBack="true" headTitle="新闻稿"></z-header>
-        <div class="container news-details-container" style="width:100%;">
+        <div class="container news-details-container">
             <h2 class="news-title fs32 c-1a1a1a text-center" v-text="articleItem.title"></h2>
             <h5>
                 <span class="time" v-text="articleItem.viewDate"></span>
                 <span class="browser ml40">浏览：{{articleItem.hits}}</span>
             </h5>
             <div v-html="content"></div>
-            <!--<p v-for="(item,index) in downloadFiles" :key="index">
-                <a :href="fileBaseUrl+item" v-text="(index+1)+'、附件'" target="black"></a>
-            </p>-->
+            <p v-for="(item,index) in downloadFiles" :key="index">
+                <a class="c-4a90e2" :href="fileBaseUrl+item" v-text="(index+1)+'、附件下载'" target="black"></a>
+            </p>
         </div>
         <z-footer></z-footer>
     </div>
@@ -61,4 +61,5 @@ export default {
 }
 </script>
 <style scoped>
+.c-4a90e2{color:#4a90e2;}
 </style>
