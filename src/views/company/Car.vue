@@ -56,7 +56,7 @@
                                     <label for="">备注（选填）：</label>
                                 </td>
                                 <td>
-                                    <textarea name='remarks' v-model="myform.remarks" placeholder="请控制在250个汉字以内"></textarea>
+                                    <textarea name='remarks' v-model="myform.remarks" placeholder="请控制在250个汉字以内" maxlength="250"></textarea>
                                 </td>
                             </tr>
                             <tr>
@@ -104,7 +104,7 @@ export default {
                     api.post('/v1/comcompany/save', this.myform).then(response => {
                         if (response.status == 200 && response.data.code == 200) {
                             alert('提交申请成功！');
-                            this.defaultData = Object.assign(this.myform, this.defaultData)
+                            Object.assign(this.myform, this.defaultData)
                             this.isShow = false
                         }
                     });

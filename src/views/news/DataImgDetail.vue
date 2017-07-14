@@ -2,7 +2,7 @@
     <div>
         <z-header goBack="true" headTitle="图片资料"></z-header>
         <div class="data-item">
-            <a class="every-box" v-for="(item,index) in imgList" :key="index">
+            <a class="every-box" v-for="(item,index) in imgList" :key="index" :href="fileBaseUrl+item" >
                 <img :src="fileBaseUrl+item" alt="">
                 <div class="txt-intro" v-text="title"></div>
             </a>

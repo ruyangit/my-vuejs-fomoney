@@ -120,7 +120,7 @@ export default {
                     api.post('/v1/comcompany/save', this.myform).then(response => {
                         if (response.status == 200 && response.data.code == 200) {
                             alert('提交申请成功！');
-                            this.defaultData = Object.assign(this.myform, this.defaultData)
+                            Object.assign(this.myform, this.defaultData)
                             this.close()
                         }
                     });
