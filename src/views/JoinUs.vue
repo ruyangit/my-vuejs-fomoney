@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="background-color:#f5f5f5;">
 		<z-header goBack='true' headTitle="加入我们"></z-header>
 		<div class="container join-us-container">
 			<div class="join-banner">

@@ -13,7 +13,7 @@
             </div>
             <div class="imgandbnt">
                 <img src="/static/images/app_download_bg.jpg" alt="">
-                <a class="btn download-btn" href="javascript:;">立即下载最新版</a>
+                <a class="btn download-btn" href="https://www.fosun-pay.com/module/qrcode/fx_download.jsp">立即下载最新版</a>
             </div>
         </div>
         <z-footer></z-footer>
