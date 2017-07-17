@@ -90,6 +90,7 @@ export default {
     // }
 }
 </script>
-<style scoped>
-
+<style>
+.video-js.vjs-custom-skin{height:200px;}
+.video-js.vjs-custom-skin .vjs-control{width:2em!important;}
 </style>

@@ -29,7 +29,7 @@
         </div>
         <!--背景-->
         <div class="enter_aboutus_bg"></div>
-        <z-footer></z-footer>
+        <z-footer class="enter_aboutus_footer"></z-footer>
         <!--模态框公司详情-->
         <transition name="fade">
             <div class="modal-common enter-alert-details" v-show="al1" @click="zDetarget('al1')">

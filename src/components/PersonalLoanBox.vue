@@ -20,7 +20,7 @@
                                 <label for="phone">手机号：</label>
                             </td>
                             <td>
-                                <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入电话" name="phone">
+                                <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入手机号码" name="phone">
                             </td>
                         </tr>
                         <tr>
@@ -57,7 +57,7 @@
                             </td>
                             <td>
                                 <label v-for="(item,index) in array" :key="index">
-                                    <input type="checkbox" v-model="checklist" :value="item"> {{item}}
+                                    <input type="checkbox" v-model="checklist" :value="item">{{item}}
                                 </label>
                             </td>
                         </tr>
@@ -163,3 +163,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.apply-box form table tr td input[type="submit"]{
+    margin-left:0.6rem;
+}
+</style>

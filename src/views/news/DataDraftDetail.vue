@@ -1,7 +1,7 @@
 <template>
     <div>
         <z-header goBack="true" headTitle="新闻稿"></z-header>
-        <div class="container news-details-container">
+        <div class="container news-details-container min-height">
             <h2 class="news-title fs32 c-1a1a1a text-center" v-text="articleItem.title"></h2>
             <h5>
                 <span class="time" v-text="articleItem.viewDate"></span>
@@ -62,4 +62,5 @@ export default {
 </script>
 <style scoped>
 .c-4a90e2{color:#4a90e2;}
+.min-height{min-height:11rem;}
 </style>
