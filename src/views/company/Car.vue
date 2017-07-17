@@ -159,6 +159,7 @@ export default {
     left: 50%;
     margin-left: -3.75rem;
     background-size: 7.5rem 3.8rem;
+    z-index: -1;
 }
 
 .company-carlease-container a.btn {

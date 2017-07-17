@@ -529,7 +529,7 @@ footer p {
 /*--------------------------个人通、企业通弹出层*/
 
 .apply-box {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;

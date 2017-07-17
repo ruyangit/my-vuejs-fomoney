@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="position:relative;">
 		<z-header goBack='/company' headTitle="企业贷款"></z-header>
 		<!--内容-->
 		<div class="container tong-common-container">

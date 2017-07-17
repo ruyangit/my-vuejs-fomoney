@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position:relative;">
       <z-header goBack='true' headTitle="电子发票"></z-header>
       <div class="eti">
          <div class="banner"></div>

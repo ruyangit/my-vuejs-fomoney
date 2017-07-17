@@ -43,6 +43,7 @@ export default {
 }
 </script>
 <style scoped>
+.apply-box{height:15rem;}
 .xing-box .xdd .banner {
     width: 7.5rem;
     height: 2.1rem;

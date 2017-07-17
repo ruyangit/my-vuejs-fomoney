@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position:relative;">
         <z-header goBack='true' headTitle="我要买车"></z-header>
         <!--内容-->
         <div class="container personal-buycar-container">
