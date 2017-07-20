@@ -31,7 +31,7 @@
 				</div>
 				<div class="mt70 mb100">
 					<div class="fs30 height30">2016年6月</div>
-					<p class="fs16 mt20 height20">商盟商务服务有限公司加入复星</p>
+					<p class="fs16 mt20 height20">商盟商务服务有限公司成为复星集团关联企业</p>
 					<div class="fs30 mt45 height30">2016年10月</div>
 					<p class="fs16 mt20 height20">复星钱包正式推出</p>
 					<div class="fs30 mt45 height30">2016年12月</div>

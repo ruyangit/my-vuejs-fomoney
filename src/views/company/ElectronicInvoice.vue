@@ -29,7 +29,7 @@
             <ul>
               <li>
                 <span class="fl left">省</span>
-                <span class="fr right">云+端” 税务信息化应用，大幅降低企业应用成本；减免发票管理过程中的繁冗环节，从而提升企业运营效率。</span>
+                <span class="fr right">“云+端” 税务信息化应用，大幅降低企业应用成本；减免发票管理过程中的繁冗环节，从而提升企业运营效率。</span>
               </li>
               <li>
                 <span class="fl left">快</span>

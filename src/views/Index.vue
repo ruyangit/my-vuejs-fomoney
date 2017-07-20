@@ -70,7 +70,7 @@
     <div class="index-modal-box modal-money" v-show="al2">
       <h2>财富管理</h2>
       <div class="bg-circle">
-        财富管理是一种财富的传承，它不仅是物质的传承，也是一种精神的传承
+        财富管理是一种财富的传承，它不仅是物质的传承，也是一种精神的传承，更是一种文化传承。
       </div>
       <p>财富管理的基础是建立在对人和对文化的认同上的信任，复星金服以复星文化和投资理念为基础，以客户的需求为核心，综合考虑风险、收益、流动性、可行性等因素，借助保险、信托、离岸公司、证券化、结构性产品等金融工具，设计系统的、有效合理的整体财富架构。</p>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al2')">
@@ -296,11 +296,11 @@ export default {
 }
 
 .modal-money .bg-circle {
-  width: 2.16rem;
-  height: 2.05rem;
+  width: 2.56rem;
+  height: 2.45rem;
   background: url(/static/images/modal_img02.png) no-repeat center center;
   margin: 0.3rem auto;
-  background-size: 2.16rem 2.05rem;
+  background-size: 2.56rem 2.45rem;
   color: #6ca9fa;
   line-height: 1.2;
   font-size: 0.2rem;
