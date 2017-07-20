@@ -25,7 +25,7 @@
 				<div class="time">
 					<div class="rectangular">
 						<p class="text-center fs60">2017</p>
-						<span class="text-center fs30">飞跃成长</span>
+						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
 				</div>
@@ -40,7 +40,7 @@
 				<div class="time">
 					<div class="rectangular">
 						<p class="text-center fs60">2015</p>
-						<span class="text-center fs30">在路上</span>
+						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
 				</div>
@@ -53,7 +53,7 @@
 				<div class="time">
 					<div class="rectangular">
 						<p class="text-center fs60">2010</p>
-						<span class="text-center fs30">飞跃成长</span>
+						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
 				</div>
@@ -66,12 +66,12 @@
 				<div>
 					<div class="fs30 height30">2017年3月</div>
 					<p class="fs16 mt20 height20">云通小贷获得优秀科技金融创新奖</p>
-					<p class="fs16 mt20 height20">量富征信、复星钱包入住“诚信上海APP”</p>
+					<p class="fs16 mt20 height20">量富征信、复星钱包入驻“诚信上海APP”</p>
 				</div>
-				<div class="time mt30">
+				<div class="time">
 					<div class="rectangular">
 						<p class="text-center fs60">2016</p>
-						<span class="text-center fs30">在路上</span>
+						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
 				</div>
@@ -88,7 +88,7 @@
 				<div class="time mt20">
 					<div class="rectangular">
 						<p class="text-center fs60">2014</p>
-						<span class="text-center fs30">在路上</span>
+						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
 				</div>
@@ -99,7 +99,7 @@
 				<div class="time mt30">
 					<div class="rectangular">
 						<p class="text-center fs60">2007</p>
-						<span class="text-center fs30">征程开始</span>
+						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
 				</div>
