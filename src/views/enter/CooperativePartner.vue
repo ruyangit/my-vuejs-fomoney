@@ -5,13 +5,113 @@
         <div class="container enter-common-container enter-cooperative-container">
             <h2>合作伙伴
                 <span>COOPERATIVE PARTNER</span>
-            </h2>
-            <h3>集团合作伙伴</h3>
+            </h2>            
             <div class="enter-partner-box">
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <swiper :options="swiperOption" ref="mySwiper">
                         <swiper-slide class="swiper-slide">
+                             <h3>兄弟企业</h3>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner01.png" alt="复地" style="width:1.7rem;height:0.26rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner02.png" alt="复星医药" style="width:1.59rem;height:0.37rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner03.png" alt="复星保德信" style="width:1.41rem;height:0.43rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner04.png" alt="复星联合健康保险" style="width:1.51rem;height:0.44rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner05.png" alt="豫园商城" style="width:1.36rem;height:0.43rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner06.png" alt="老庙黄金" style="width:1.73rem;height:0.36rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner07.png" alt="爱必侬" style="width:1.18rem;height:0.49rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner08.png" alt="构家" style="width:1.19rem;height:0.37rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner09.png" alt="易太极" style="width:1.13rem;height:0.4rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner10.png" alt="上海钢联" style="width:1.74rem;height:0.5rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner11.png" alt="星堡" style="width:1.56rem;height:0.66rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner12.png" alt="星泓资本" style="width:0.91rem;height:0.74rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner13.png" alt="星浩资本" style="width:1.32rem;height:0.4rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner14.png" alt="星豫资本" style="width:0.41rem;height:0.56rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner15.png" alt="星景资本" style="width:1.84rem;height:0.2rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner16.png" alt="onelink" style="width:1.42rem;height:0.51rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="/static/images/en_partner17.png" alt="阳光印网" style="width:1.35rem;height:0.44rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-right-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner18.png" alt="德邦证券" style="width:1.62rem;height:0.42rem;">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="border-bottom-none" href="javascript:void(0);">
+                                        <img src="/static/images/en_partner19.png" alt="德邦基金" style="width:1.62rem;height:0.42rem;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </swiper-slide>
+                        <swiper-slide class="swiper-slide">
+                            <h3>合作伙伴</h3>
                             <ul class="clearfix">
                                 <li>
                                     <a href="javascript:void(0);">
@@ -84,46 +184,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </swiper-slide>
-                        <swiper-slide class="swiper-slide">
-                            <!--<ul class="clearfix">
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner05.png" alt="豫园商城" style="width:1.36rem;height:0.43rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner04.png" alt="复星联合健康保险" style="width:1.51rem;height:0.6rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="border-right-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner09.png" alt="易太极" style="width:1.13rem;height:0.4rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner10.png" alt="上海钢联" style="width:1.74rem;height:0.5rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <img src="/static/images/en_partner14.png" alt="星豫资本" style="width:0.6rem;height:0.8rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="border-right-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner15.png" alt="星景资本" style="width:1.84rem;height:0.2rem;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="border-bottom-none" href="javascript:void(0);">
-                                        <img src="/static/images/en_partner19.png" alt="德邦基金" style="width:1.62rem;height:0.42rem;">
-                                    </a>
-                                </li>
-                            </ul>-->
-                        </swiper-slide>
+                        </swiper-slide>                       
                     </swiper>
                     <!-- 左右滑动按钮 -->
                     <div class="swiper-button-next">&gt;</div>
