@@ -79,11 +79,11 @@ header {
 header a.logo {
     display: block;
     height: 0.8rem;
-    width: 2.51rem;
+    width: 3.05rem;
 }
 
 header a.logo img {
-    width: 2.51rem;
+    width: 3.05rem;
     height: 0.26rem;
 }
 
@@ -474,6 +474,7 @@ footer p {
 .news-details-container p {
     margin-top: 0;
 }
+
 .news-details-container img {
     width: 7.5rem;
 }
