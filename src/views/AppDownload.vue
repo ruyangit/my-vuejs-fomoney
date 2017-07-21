@@ -3,7 +3,9 @@
         <z-header></z-header>
         <div class="container app-container">
             <div class="close-box">
-                <router-link to="/"><img src="/static/images/icon_close.png" alt="关闭"></router-link>
+                <router-link to="/">
+                    <img src="/static/images/icon_close.png" alt="关闭">
+                </router-link>
             </div>
             <div class="fomoney-box text-center">
                 <img src="/static/images/logo_fomoney.png" alt="复星钱包">
@@ -13,7 +15,7 @@
             </div>
             <div class="imgandbnt">
                 <img src="/static/images/app_download_bg.jpg" alt="">
-                <a class="btn download-btn" href="https://www.fosun-pay.com/module/qrcode/fx_download.jsp">立即下载最新版</a>
+                <a class="btn download-btn" @click="downloadApp()">立即下载最新版</a>
             </div>
         </div>
         <z-footer></z-footer>
@@ -24,9 +26,39 @@
 import zHeader from '@/components/Header'
 import zFooter from '@/components/Footer'
 export default {
-    components:{
+    components: {
         zHeader,
         zFooter
+    },
+    methods: {
+        downloadApp(){
+            if(this.is_ios()){
+                //alert('ios');
+                window.open('https://itunes.apple.com/cn/app/fu-xing-qian-bao/id1155456006?mt=8');
+            }else if(this.is_android()){
+                //alert('android');
+                window.open('http://app.qq.com/#id=detail&appid=1105656830');
+            }else{
+                //alert('other');
+                window.open('http://app.qq.com/#id=detail&appid=1105656830');
+            }
+        },
+        is_ios() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (/iphone|ipad|ipod/.test(ua)) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        is_android() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (/android|linux/.test(ua)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 }
 </script>
