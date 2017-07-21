@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="position:relative;">
 		<z-header goBack='/personal' headTitle="我要贷款"></z-header>
 		<!--内容-->
 		<div class="container tong-common-container">
@@ -32,15 +32,15 @@ export default {
 					text: '星学贷',
 					url: '/personal/loansunlearn',
 					isShow: true
+				},				
+				{
+					text: '星抵贷',
+					url: '/personal/loansunattived',
+					isShow: false
 				},
 				{
 					text: '星薪贷',
 					url: '/personal/loansunsalary',
-					isShow: false
-				},
-				{
-					text: '星抵贷',
-					url: '/personal/loansunattived',
 					isShow: false
 				}
 			]

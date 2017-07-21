@@ -14,7 +14,7 @@
             </h3>
             <h3>
                 <label>参考利息：</label>
-                <span>8% ~ 12%</span>
+                <span>8% ~ 15%</span>
             </h3>
             <h3>
                 <label>还款方式：</label>
@@ -43,6 +43,7 @@ export default {
 }
 </script>
 <style scoped>
+.apply-box{height:15rem;}
 .xing-box .xxind .banner {
     width: 7.5rem;
     height: 2.1rem;

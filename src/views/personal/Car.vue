@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position:relative;">
         <z-header goBack='true' headTitle="我要买车"></z-header>
         <!--内容-->
         <div class="container personal-buycar-container">
@@ -88,7 +88,7 @@
             <h3>创富汽车金融，启动梦想里程</h3>
             <p>在国外，我们随处可见“每月支付几十美元，或是首付几百美元，把车开回家”的广告，这就是在欧美及日本等汽车产业发达市场上流行的汽车融资租赁金融产品。 现在，创富把这种消费模式和理念带到中国，根据市场需求推出了 “打包融资租赁”的产品，为消费者提供新车及二手车的融资租赁业务。创富汽车融资租赁，名为“租” 实为“购”，消费者通过分期支付租金的方式在租赁期满实现购车。</p>
         </div>
-        <z-footer></z-footer>
+        <z-footer class="footer-css"></z-footer>
         <!--我要申请-->
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="isShow=!isShow">我要申请</a>
@@ -148,7 +148,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>* 请填写您的基本资料，提交申请后，我们会在1个工作日内和您联系！</p>
+                    <p>* 请填写您的基本资料，提交申请后，我们会在3个工作日内和您联系！</p>
                 </form>
             </div>
         </transition>
@@ -338,4 +338,7 @@ footer.personal-buycar-pb125 {
     margin: 0 auto;
 }
 
+.footer-css{
+    margin-bottom: 1.3rem!important;
+}
 </style>

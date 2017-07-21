@@ -64,7 +64,7 @@ export default {
 .xing-box .xxd .banner {
     width: 7.5rem;
     height: 2.1rem;
-    background: url(/static/images/personal_xxd_banner.png) no-repeat center center;
+    background: url(/static/images/personal_xxd_banner.jpg) no-repeat center center;
     background-size: 7.5rem 2.1rem;
 }
 

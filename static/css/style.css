@@ -79,11 +79,11 @@ header {
 header a.logo {
     display: block;
     height: 0.8rem;
-    width: 2.51rem;
+    width: 3.05rem;
 }
 
 header a.logo img {
-    width: 2.51rem;
+    width: 3.05rem;
     height: 0.26rem;
 }
 
@@ -471,9 +471,12 @@ footer p {
     line-height: 1.5;
 }
 
+.news-details-container p {
+    margin-top: 0;
+}
+
 .news-details-container img {
     width: 7.5rem;
-    height: 2.8rem;
 }
 
 .news-details-container h5 {
@@ -514,7 +517,7 @@ footer p {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     color: #1a1a1a;
     text-align: center;
 }
@@ -529,7 +532,7 @@ footer p {
 /*--------------------------个人通、企业通弹出层*/
 
 .apply-box {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position:relative;">
       <z-header goBack='true' headTitle="电子发票"></z-header>
       <div class="eti">
          <div class="banner"></div>
@@ -24,12 +24,12 @@
             <a class="btn" href="javascript:;" @click="isShow=!isShow">我要申请</a>
          </div>
          <div class="detail-content">
-            <p class="introduce"><a>电子发票</a>是随着社会不断的进步、网络高速的发展以及电子商务快速的崛起而产生的，在电子发票上附有电子税局的签名机制，而税局则通过电子发票数据的产生、流转、查验和应用，实现“以票控税”向“信息管税”的过渡。复星金服电子发票服务，助力复星ONE FOSUN战略，从价值链形成服务闭环到形成开放的生态圈，强化产业能力和服务用户能力。</p>
+            <p class="introduce"><a>电子发票</a>是随着社会不断进步、网络高速发展以及电子商务快速崛起而产生的，在电子发票上附有电子税局的签名机制，而税局则通过电子发票数据的产生、流转、查验和应用，实现“以票控税”向“信息管税”的过渡。复星金服电子发票服务，助力复星ONE FOSUN战略，从价值链形成服务闭环到形成开放的生态圈，强化产业能力和服务用户能力。</p>
             <p class="advantage">特点与优势</p>
             <ul>
               <li>
                 <span class="fl left">省</span>
-                <span class="fr right">云+端” 税务信息化应用，大幅降低企业应用成本；减免发票管理过程中的繁冗环节，从而提升企业运营效率。</span>
+                <span class="fr right">“云+端” 税务信息化应用，大幅降低企业应用成本；减免发票管理过程中的繁冗环节，从而提升企业运营效率。</span>
               </li>
               <li>
                 <span class="fl left">快</span>
@@ -64,7 +64,7 @@
               </li>
               <li>
                 <p class="title">用户经营</p>
-                <p class="detail">提供从电子发票到整合营销经营的全套方案，帮助客户实现用户从线下到线上的深度</p>
+                <p class="detail">提供从电子发票到整合营销经营的全套方案，帮助客户实现用户从线下到线上的联通</p>
               </li>
             </ol>
          </div>
@@ -120,7 +120,7 @@
                   </tr>
                 </tbody>
               </table>
-              <p>* 请填写您的基本资料，提交申请后，我们会在1个工作日内和您联系！</p>
+              <p>* 请填写您的基本资料，提交申请后，我们会在3个工作日内和您联系！</p>
            </form>
          </div>
       </transition>

@@ -66,7 +66,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>* 请填写您的基本资料，提交申请后，我们会在1个工作日内和您联系！</p>
+                    <p>* 请填写您的基本资料，提交申请后，我们会在3个工作日内和您联系！</p>
                 </form>
             </div>
         </transition>
@@ -159,6 +159,7 @@ export default {
     left: 50%;
     margin-left: -3.75rem;
     background-size: 7.5rem 3.8rem;
+    z-index: -1;
 }
 
 .company-carlease-container a.btn {
