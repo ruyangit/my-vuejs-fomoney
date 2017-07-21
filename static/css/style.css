@@ -471,6 +471,9 @@ footer p {
     line-height: 1.5;
 }
 
+.news-details-container p {
+    margin-top: 0;
+}
 .news-details-container img {
     width: 7.5rem;
 }
