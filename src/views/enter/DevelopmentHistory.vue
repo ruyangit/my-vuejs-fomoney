@@ -18,8 +18,8 @@
 				    <div class="line height210"></div>
 				    <span class="di round"></span>
 				    <div class="line height150"></div>
-				    <span class="di round"></span>
-				    <div class="line height170"></div>
+				    <!--<span class="di round"></span>
+				    <div class="line height170"></div>-->
 			    </div>
 			    <div class="content-left text-right">
 				<div class="time">
@@ -96,13 +96,13 @@
 					<div class="fs30 height30">2010年2月</div>
 					<p class="fs16 mt20 height20">创富融资租赁（上海）有限公司成立</p>
 				</div>
-				<div class="time mt30">
+				<!--<div class="time mt30">
 					<div class="rectangular">
 						<p class="text-center fs60">2007</p>
 						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
-				</div>
+				</div>-->
 			</div>
 	    	</div>
 	    </section>
