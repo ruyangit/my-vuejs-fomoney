@@ -49,20 +49,12 @@ export default {
                             for (var i = 0; i < imgs.length; i++) {
                                 var imgWidth = imgs[i].width;
                                 var imgHeight = imgs[i].height;
-                                // console.log(imgWidth);
-                                // console.log(imgHeight);
                                 if (imgWidth / imgHeight > 330 / 242) {
-                                    // console.log('宽过长')
                                     imgs[i].style.height = '2.42rem';
                                     imgs[i].style.width = 'auto';
-                                    // console.log('A');
-                                    // console.log(i);
                                 } else {
-                                    // console.log('高过高')
                                     imgs[i].style.width = '3.3rem';
                                     imgs[i].style.height = 'auto';
-                                    // console.log('B');
-                                   //  console.log(i);
                                 }
                             };
                         }, 200);
@@ -93,10 +85,10 @@ export default {
     overflow: hidden;
 }
 
-.every-box img {
-    /*width: 3.3rem;
-    height: 2.42rem;*/
-}
+/*.every-box img {
+    width: 3.3rem;
+    height: 2.42rem;
+}*/
 
 .every-box .txt-intro {
     color: #fff;
