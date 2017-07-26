@@ -29,10 +29,10 @@
                         <div class="txt-intro">
                             <h3>王俊杰</h3>
                             <h5>复星金服总裁助理</h5>
-                            <h5>创富融资租赁（上海）有限公司总裁</h5>
+                            <h5>创富融资租赁(上海)有限公司总裁</h5>
                         </div>
                     </a>
-                </li>                
+                </li>
                 <li @click="zDetarget('al4')">
                     <a class="leader-yuanweimin ml50" href="javascript:;">
                         <div class="txt-intro">
@@ -50,7 +50,7 @@
                             <h5>市场与客户服务部总经理</h5>
                         </div>
                     </a>
-                </li>                
+                </li>
             </ul>
         </div>
         <z-footer></z-footer>
@@ -58,7 +58,7 @@
         <!--模态框leader详情-->
         <transition name="fade">
             <div class="enter-alert-details modal-common-leader" v-show="al1" @click="zDetarget('al1')">
-                <img src="/static/images/leader_guxiaoxu.jpg" alt="辜校旭">
+                <img src="/static/images/leader_guxiaoxu.png" alt="辜校旭">
                 <h2>辜校旭</h2>
                 <h5>复星集团副总裁</h5>
                 <h5>银行集团总裁</h5>
@@ -67,7 +67,7 @@
         </transition>
         <transition name="fade">
             <div class="enter-alert-details modal-common-leader" v-show="al2" @click="zDetarget('al2')">
-                <img src="/static/images/leader_shenzhihua.jpg" alt="申志华">
+                <img src="/static/images/leader_shenzhihua.png" alt="申志华">
                 <h2>申志华</h2>
                 <h5>复星金服执行总裁</h5>
                 <p>中国人民银行总行征信中心特聘专家；注册金融分析师(CFA)；并于2015年入选上海市千人计划。申志华先生曾任中国平安银行零售风险技术总监兼大数据决策管理部总经理、中国民生银行风险管理部副总经理、美国富国银行风险管理部副总裁、美国运通银行信用卡风险管理部高级研究员等职。申志华先生长期从事数据挖掘、商业银行风险管理、中小企业金融服务、量化模型、信贷工厂建设等工作。申志华先生拥有美国加州大学伯克利分校经济学博士和统计学硕士学位，多次在美国世界一流的计量经济学和经济学刊物发表论文。</p>
@@ -75,16 +75,16 @@
         </transition>
         <transition name="fade">
             <div class="enter-alert-details modal-common-leader" v-show="al5" @click="zDetarget('al5')">
-                <img src="/static/images/leader_wangjunjie.jpg" alt="王俊杰">
+                <img src="/static/images/leader_wangjunjie.png" alt="王俊杰">
                 <h2>王俊杰</h2>
                 <h5>复星金服总裁助理</h5>
                 <h5>创富融资租赁（上海）有限公司总裁</h5>
                 <p>毕业于美国杜克大学MBA，注册金融分析师（CFA）。曾任汇丰银行深圳分行和武汉分行的副行长、麦肯锡管理咨询有限公司北京和上海分公司项目经理、科誉高瞻融资租赁有限公司首席财务官兼首席运营官、海航资本投资银行部总经理助理。2014年8月至今，任复星集团融资租赁发展部总经理。现为复星金服总裁助理兼创富融资租赁（上海）有限公司总裁。</p>
             </div>
-        </transition>                
+        </transition>
         <transition name="fade">
             <div class="enter-alert-details modal-common-leader modal-leader-guxiaoxu" v-show="al4" @click="zDetarget('al4')">
-                <img src="/static/images/leader_yuanweimin.jpg" alt="袁伟民">
+                <img src="/static/images/leader_yuanweimin.png" alt="袁伟民">
                 <h2>袁伟民</h2>
                 <h5>复星金服总裁助理</h5>
                 <h5>科技开发与管理部总经理</h5>
@@ -93,13 +93,13 @@
         </transition>
         <transition name="fade">
             <div class="enter-alert-details modal-common-leader" v-show="al3" @click="zDetarget('al3')">
-                <img src="/static/images/leader_liupeng.jpg" alt="刘鹏">
+                <img src="/static/images/leader_liupeng.png" alt="刘鹏">
                 <h2>刘鹏</h2>
                 <h5>复星金服总裁助理</h5>
                 <h5>市场与客户服务部总经理</h5>
                 <p>刘鹏先生先后在中国工商银行天津分行、中国建设银行总行、中国银联总公司、上海银行总行、万达金融集团、万达网络科技集团工作多年，金融工作经验丰富，曾多年在商业银行和万达集团任高级管理职位，其主持开发的金融产品和主持策划开展的大型营销活动先后获得十多次业内专业奖项。在学术方面，刘鹏先生著作出版《银行卡产品研发和客户忠诚度管理》、合著出版《银行卡服务营销理论与实务》。</p>
             </div>
-        </transition> 
+        </transition>
     </div>
 </template>
 
@@ -160,28 +160,33 @@ export default {
 }
 
 .enter-leadership-container ul li a.leader-guxiaoxu {
-    background: url(/static/images/leader_guxiaoxu.jpg) no-repeat center center;
+    background: url(/static/images/leader_guxiaoxu.png) no-repeat center center;
     background-size: 3.2rem 3.6rem;
+    background-color: #f8f8f8;
 }
 
 .enter-leadership-container ul li a.leader-shenzhihua {
-    background: url(/static/images/leader_shenzhihua.jpg) no-repeat center center;
+    background: url(/static/images/leader_shenzhihua.png) no-repeat center center;
     background-size: 3.2rem 3.6rem;
+    background-color: #f8f8f8;
 }
 
 .enter-leadership-container ul li a.leader-liupeng {
-    background: url(/static/images/leader_liupeng.jpg) no-repeat center center;
+    background: url(/static/images/leader_liupeng.png) no-repeat center center;
     background-size: 3.2rem 3.6rem;
+    background-color: #f8f8f8;
 }
 
 .enter-leadership-container ul li a.leader-wangjunjie {
-    background: url(/static/images/leader_wangjunjie.jpg) no-repeat center center;
+    background: url(/static/images/leader_wangjunjie.png) no-repeat center center;
     background-size: 3.2rem 3.6rem;
+    background-color: #f8f8f8;
 }
 
 .enter-leadership-container ul li a.leader-yuanweimin {
-    background: url(/static/images/leader_yuanweimin.jpg) no-repeat center center;
+    background: url(/static/images/leader_yuanweimin.png) no-repeat center center;
     background-size: 3.2rem 3.6rem;
+    background-color: #f8f8f8;
 }
 
 .enter-leadership-container ul li .txt-intro {
@@ -204,6 +209,16 @@ export default {
     line-height: 1.2;
     font-size: 0.2rem;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,4 +252,5 @@ export default {
     line-height: 1.5;
     text-align: left;
 }
+
 </style>
