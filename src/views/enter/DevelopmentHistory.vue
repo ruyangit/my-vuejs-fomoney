@@ -18,8 +18,8 @@
 				    <div class="line height210"></div>
 				    <span class="di round"></span>
 				    <div class="line height150"></div>
-				    <span class="di round"></span>
-				    <div class="line height170"></div>
+				    <!--<span class="di round"></span>
+				    <div class="line height170"></div>-->
 			    </div>
 			    <div class="content-left text-right">
 				<div class="time">
@@ -30,14 +30,14 @@
 					<div class="rectangular-under"></div>
 				</div>
 				<div class="mt70 mb100">
-					<div class="fs30 height30">2016年6月</div>
-					<p class="fs16 mt20 height20">商盟商务服务有限公司成为复星集团关联企业</p>
+					<!--<div class="fs30 height30">2016年6月</div>
+					<p class="fs16 mt20 height20">商盟商务服务有限公司成为复星集团关联企业</p>-->
 					<div class="fs30 mt45 height30">2016年10月</div>
 					<p class="fs16 mt20 height20">复星钱包正式推出</p>
 					<div class="fs30 mt45 height30">2016年12月</div>
 					<p class="fs16 mt20 height20">星联保理进入医疗行业</p>
 				</div>
-				<div class="time">
+				<div class="time" style="margin-top:0;">
 					<div class="rectangular">
 						<p class="text-center fs60">2015</p>
 						<span class="text-center fs30"></span>
@@ -58,8 +58,8 @@
 					<div class="rectangular-under"></div>
 				</div>
 				<div class="mt70">
-					<div class="fs30 height30">2007年6月</div>
-					<p class="fs16 mt20 height20">商盟商务服务有限公司成立 </p>
+					<!--<div class="fs30 height30">2007年6月</div>
+					<p class="fs16 mt20 height20">商盟商务服务有限公司成立 </p>-->
 				</div>
 			</div>
 			<div class="content-right">
@@ -96,13 +96,13 @@
 					<div class="fs30 height30">2010年2月</div>
 					<p class="fs16 mt20 height20">创富融资租赁（上海）有限公司成立</p>
 				</div>
-				<div class="time mt30">
+				<!--<div class="time mt30">
 					<div class="rectangular">
 						<p class="text-center fs60">2007</p>
 						<span class="text-center fs30"></span>
 					</div>
 					<div class="rectangular-under"></div>
-				</div>
+				</div>-->
 			</div>
 	    	</div>
 	    </section>

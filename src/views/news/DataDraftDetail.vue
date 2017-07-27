@@ -8,7 +8,7 @@
                 <span class="browser ml40">浏览：{{articleItem.hits}}</span>
             </h5>
             <div v-html="content"></div>
-            <p v-for="(item,index) in downloadFiles" :key="index">
+            <p v-for="(item,index) in downloadFiles" :key="index" style="margin-top:0.3rem;">
                 <a class="c-4a90e2" :href="fileBaseUrl+item" v-text="(index+1)+'、附件下载'" target="black"></a>
             </p>
         </div>
