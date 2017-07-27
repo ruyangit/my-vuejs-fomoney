@@ -36,7 +36,7 @@ export default {
             }
             api.get('/v1/article/item', config).then(response => {
                 if (response.status == 200 && response.data.code == 200) {
-                    response.data.data.viewDate= response.data.data.updateDate.split(' ')[0]
+                    response.data.data.viewDate= response.data.data.createDate.split(' ')[0]
                     this.articleItem=response.data.data
                     if(this.articleItem.articleData){
                         this.content = this.articleItem.articleData.content

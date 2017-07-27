@@ -64,7 +64,7 @@ export default {
                     list.map(e => {
                         e.image = imgBaseUrl + e.image;
                         e.originalImage = imgBaseUrl + e.originalImage;
-                        e.viewDate = e.updateDate.split(' ')[0]
+                        e.viewDate = e.createDate.split(' ')[0]
                     })
 
                     this.totalPage = response.data.data.totalPage
