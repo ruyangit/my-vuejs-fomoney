@@ -12,7 +12,7 @@
                         <div class="txt-intro">
                             <h3>辜校旭</h3>
                             <h5>复星集团副总裁</h5>
-                            <h5>银行集团总裁</h5>
+                            <h5>复星金服集团总裁</h5>
                         </div>
                     </a>
                 </li>
@@ -20,7 +20,7 @@
                     <a class="leader-shenzhihua ml50" href="javascript:;">
                         <div class="txt-intro">
                             <h3>申志华</h3>
-                            <h5>复星金服执行总裁</h5>
+                            <h5>掌星宝执行总裁</h5>
                         </div>
                     </a>
                 </li>
@@ -28,8 +28,8 @@
                     <a class="leader-wangjunjie" href="javascript:;">
                         <div class="txt-intro">
                             <h3>王俊杰</h3>
-                            <h5>复星金服总裁助理</h5>
-                            <h5>创富融资租赁(上海)有限公司总裁</h5>
+                            <h5>掌星宝总裁助理</h5>
+                            <h5>创富租赁总裁</h5>
                         </div>
                     </a>
                 </li>
@@ -37,7 +37,7 @@
                     <a class="leader-yuanweimin ml50" href="javascript:;">
                         <div class="txt-intro">
                             <h3>袁伟民</h3>
-                            <h5>复星金服总裁助理</h5>
+                            <h5>掌星宝总裁助理</h5>
                             <h5>科技开发与管理部总经理</h5>
                         </div>
                     </a>
@@ -46,7 +46,7 @@
                     <a class="leader-liupeng" href="javascript:;">
                         <div class="txt-intro">
                             <h3>刘鹏</h3>
-                            <h5>复星金服总裁助理</h5>
+                            <h5>掌星宝总裁助理</h5>
                             <h5>市场与客户服务部总经理</h5>
                         </div>
                     </a>
