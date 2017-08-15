@@ -3,14 +3,14 @@
     <div class="item xxind active">
         <div class="banner"></div>
         <div class="txt-content">
-            <h2>复星员工专享，快速批复，3天放款。</h2>
+            <h2>复星员工专享，快速审批，3天放款。</h2>
             <h3>
                 <label>贷款金额：</label>
                 <span>1万元 ~ 5万元</span>
             </h3>
             <h3>
                 <label>贷款期限：</label>
-                <span>12个月</span>
+                <span>12个月以内</span>
             </h3>
             <h3>
                 <label>参考利息：</label>

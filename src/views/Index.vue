@@ -72,7 +72,7 @@
       <div class="bg-circle">
         财富管理是一种财富的传承，它不仅是物质的传承，也是一种精神的传承，更是一种文化传承。
       </div>
-      <p>财富管理的基础是建立在对人和对文化的认同上的信任，复星金服以复星文化和投资理念为基础，以客户的需求为核心，综合考虑风险、收益、流动性、可行性等因素，借助保险、信托、离岸公司、证券化、结构性产品等金融工具，设计系统的、有效合理的整体财富架构。</p>
+      <p>财富管理的基础是建立在对人和对文化的认同上的信任，复星金服以复星文化和投资理念为基础，以客户的需求为核心，综合考虑风险、收益、流动性、可行性等因素，借助保险、信托、证券化、结构性产品等金融工具，设计系统的、有效合理的整体财富架构。</p>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al2')">
     </div>
     </transition>
@@ -80,7 +80,7 @@
     <transition name="fade">
     <div class="index-modal-box modal-finance" v-show="al3">
       <h2>金融科技</h2>
-      <p>作为复星金服高科技内核，金融科技事业部坚持以科技引领金融，打造“移动支付”、“大数据征信”、“新兴技术”三大核心，携手各业务板块不断开拓创新，探索互联网金融新业务模式。</p>
+      <p>作为复星金服高科技内核，金融科技事业部坚持以科技引领金融，打造“电子支付”、“大数据征信”、“新兴技术”三大核心，携手各业务板块不断开拓创新，探索互联网金融新业务模式。</p>
       <img class="modal-img03" src="/static/images/modal_img03.png" alt="" >
       <div class="modal-btn-box">
         <router-link to="/company/techcredit" >体验金融科技服务 >></router-link>

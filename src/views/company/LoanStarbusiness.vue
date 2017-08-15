@@ -2,7 +2,7 @@
   <div class="item sbe active">
       <div class="banner"></div>
       <div class="content">
-          <p class="detail">针对银联商务POS收单、专业化服务商户，个人客户最高达50万元的生产经营信用贷款。</p>
+          <p class="detail">针对银联商务POS收单、专业化服务商户，提供最高达50万元的生产经营信用贷款。</p>
           <h3>产品优势</h3>
           <ul>
               <li>

@@ -3,7 +3,7 @@
     <div class="item xxd active">
         <div class="banner"></div>
         <div class="txt-content">
-            <h2>星学贷，妈妈再也不用担心我的学习！(2天出款150万)</h2>
+            <h2>星学贷，妈妈再也不用担心我的学习！(审核通过2天内放款)</h2>
             <h3>
                 <label>贷款金额：</label>
                 <span>不超过150万元</span>
@@ -20,7 +20,7 @@
                 <label>还款方式：</label>
                 <span>等额本息</span>
             </h3>
-            <p>主要针对留学的学生提供留学保证金的贷款业务，低门槛、低风险、高效率、纯信用的贷款服务。一款专为在上海市办理出国留学的个人，提供出国留学存款证明类信用贷款，资料齐全后仅需两天即可获得贷款资金。</p>
+            <p>主要针对留学的学生提供留学保证金的贷款业务，低门槛、低风险、高效率、纯信用的贷款服务。一款专为在上海市办理出国留学的个人，提供出国留学信用贷款，资料齐全后仅需两天即可获得贷款资金。</p>
             <div class="icon-box clearfix">
                 <div class="iconitem">
                     <img src="/static/images/personal_xxd_icon01.png" alt="低门槛">
