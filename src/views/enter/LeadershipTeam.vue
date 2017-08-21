@@ -51,6 +51,15 @@
                         </div>
                     </a>
                 </li>
+                <li @click="zDetarget('al6')">
+                    <a class="leader-bank ml50" href="javascript:;">
+                        <div class="txt-intro">
+                            <h3>领导</h3>
+                            <h5>银行集团</h5>
+                            <h5>投资团队</h5>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
         <z-footer></z-footer>
@@ -100,6 +109,15 @@
                 <p>刘鹏先生先后在中国工商银行天津分行、中国建设银行总行、中国银联总公司、上海银行总行、万达金融集团、万达网络科技集团工作多年，金融工作经验丰富，曾多年在商业银行和万达集团任高级管理职位，其主持开发的金融产品和主持策划开展的大型营销活动先后获得十多次业内专业奖项。在学术方面，刘鹏先生著作出版《银行卡产品研发和客户忠诚度管理》、合著出版《银行卡服务营销理论与实务》。</p>
             </div>
         </transition>
+        <transition name="fade">
+            <div class="enter-alert-details modal-common-leader" v-show="al6" @click="zDetarget('al6')">
+                <img src="/static/images/leader_bank.png" alt="">
+                <h2>领导</h2>
+                <h5>银行集团</h5>
+                <h5>投资团队</h5>
+                <p></p>
+            </div>
+        </transition>
     </div>
 </template>
 
@@ -114,6 +132,7 @@ export default {
             al3: false,
             al4: false,
             al5: false,
+            al6: false,
         }
     },
     components: {
@@ -132,6 +151,8 @@ export default {
                 this.al4 = !this.al4
             } else if (al === "al5") {
                 this.al5 = !this.al5
+            } else if (al === "al6") {
+                this.al6 = !this.al6
             }
         }
     }
@@ -185,6 +206,12 @@ export default {
 
 .enter-leadership-container ul li a.leader-yuanweimin {
     background: url(/static/images/leader_yuanweimin.png) no-repeat center center;
+    background-size: 3.2rem 3.6rem;
+    background-color: #f8f8f8;
+}
+
+.enter-leadership-container ul li a.leader-bank {
+    background: url(/static/images/leader_bank.png) no-repeat center center;
     background-size: 3.2rem 3.6rem;
     background-color: #f8f8f8;
 }

@@ -26,6 +26,9 @@
                     <a href="javascript:;" @click="zDetarget('al6')"><img src="/static/images/enter_logo09.png" alt="量富征信"></a>
                     <a href="javascript:;" @click="zDetarget('al7')"><img src="/static/images/enter_logo10.png" alt="统统付"></a>
                 </div>
+                <div class="four-line text-center">
+                    <a class="a-bank-logo" href="javascript:;" @click="zDetarget('al7')"><img src="/static/images/enter_logo11.png" alt="银行集团"></a>
+                </div>
             </div>
         </div>
         <!--背景-->
@@ -145,9 +148,10 @@ export default {
 .enter-aboutus-container h4 span{color:#1a1a1a;font-weight:bold;}
 .enter-aboutus-container h3{color:#1a1a1a;padding-bottom:0.2rem;}
 .enter-aboutus-container .family a{width:1.65rem;height:1.95rem;display:inline-block;}
+.enter-aboutus-container .family .a-bank-logo{margin:0.02rem 0 0 1.75rem;}
 .enter-aboutus-container .family a img{width:1.65rem;height:1.95rem;}
-.enter-aboutus-container .family .second-line,.enter-aboutus-container .family .three-line{margin-top:-0.4rem;}
-.enter_aboutus_bg{background:url(/static/images/enter_aboutus_bg.jpg) no-repeat center center;background-size:7.5rem 4.82rem;width:7.5rem;height:4.82rem;margin:-0.8rem auto 0;}
+.enter-aboutus-container .family .second-line,.enter-aboutus-container .family .three-line,.enter-aboutus-container .family .four-line{margin-top:-0.4rem;}
+.enter_aboutus_bg{background:url(/static/images/enter_aboutus_bg.jpg) no-repeat center center;background-size:7.5rem 4.82rem;width:7.5rem;height:4.82rem;margin:-2.8rem auto 0;}
 .enter_aboutus_footer{margin-top:-1.4rem;}
 /*模态框公司详情*/
 .modal-common{padding-top:2.6rem;}

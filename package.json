@@ -13,7 +13,7 @@
     "axios": "^0.16.2",
     "vee-validate": "^2.0.0-rc.6",
     "vue": "^2.3.3",
-    "vue-awesome-swiper": "^2.5.0",
+    "vue-awesome-swiper": "^2.6.2",
     "vue-meta": "^1.0.4",
     "vue-router": "^2.3.1",
     "vue-video-player": "^3.1.4",

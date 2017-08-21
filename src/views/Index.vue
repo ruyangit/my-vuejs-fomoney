@@ -28,27 +28,41 @@
       </div>
       <!--3个功能块-->
       <div class="function-box">
-        <ul class="clearfix">
-          <li @click="zDetarget('al1')">
-            <a class="load-serve" href="javascript:;">
-              <img src="/static/images/icon_daikuan.png" alt="贷款业务">
-              <h3>信贷业务</h3>
-            </a>
-          </li>
-          <li @click="zDetarget('al2')">
-            <a class="money-manage ml20" href="javascript:;">
-              <img src="/static/images/icon_caifu.png" alt="财富管理">
-              <h3>财富管理</h3>
-            </a>
-          </li>
-          <li @click="zDetarget('al3')">
-            <a class="finance-tech ml20 " href="javascript:;">
-              <img src="/static/images/icon_keji.png" alt="金融科技">
-              <h3>金融科技</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <swiper :options="zb">
+          <swiper-slide class="swiper-slide">
+            <div class="li" @click="zDetarget('al1')">
+              <a class="load-serve" href="javascript:;">
+                <img src="/static/images/icon_daikuan.png" alt="贷款业务">
+                <h3>信贷业务</h3>
+              </a>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide">
+            <div class="li" @click="zDetarget('al2')">
+              <a class="money-manage" href="javascript:;">
+                <img src="/static/images/icon_caifu.png" alt="财富管理">
+                <h3>财富管理</h3>
+              </a>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide">
+            <div class="li" @click="zDetarget('al3')">
+              <a class="finance-tech" href="javascript:;">
+                <img src="/static/images/icon_keji.png" alt="金融科技">
+                <h3>金融科技</h3>
+              </a>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide">
+            <div class="li" @click="zDetarget('al3')">
+              <a class="finance-tech" href="javascript:;">
+                <img src="/static/images/icon_keji.png" alt="金融科技">
+                <h3>银行集团</h3>
+              </a>
+            </div>
+          </swiper-slide>
+        </swiper>
+      </div> 
     </div>
     <z-footer></z-footer>
   
@@ -114,6 +128,12 @@ export default {
           this.page = swiper.realIndex + 1;
           this.index = swiper.realIndex;
         }
+      },
+      zb: {
+        notNextTick: true,
+        slidesPerView: 3.5,
+        paginationClickable: true,
+        spaceBetween: 10
       },
       al1:false,
       al2:false,
@@ -206,13 +226,15 @@ export default {
   padding: 0.3rem;
 }
 
-.index-container .function-box li {
+.index-container .function-box .li {
   float: left;
+  width: 100%;
 }
 
-.index-container .function-box li a {
+.index-container .function-box .li a {
   display: block;
-  width: 2.16rem;
+  /* width: 2.16rem; */
+  width: 100%;
   height: 1.7rem;
   background-color: #c9a96e;
   text-align: center;
@@ -221,14 +243,10 @@ export default {
   box-shadow:0 2px 0 #dbdbdb; 
 }
 
-.index-container .function-box li a img {
+.index-container .function-box .li a img {
   width: 0.6rem;
   margin-top: 0.4rem;
 }
-
-
-
-
 
 
 
