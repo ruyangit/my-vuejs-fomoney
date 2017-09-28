@@ -8,6 +8,7 @@
             <h4>反欺诈服务帮助您</h4>
             <p>1）识别欺诈用户，降低业务风险</p>
             <p>2）差异化开展营销活动，更有效率地创造价值</p>
+            <p class="fs28 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>

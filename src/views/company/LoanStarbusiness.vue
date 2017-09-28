@@ -22,6 +22,7 @@
                   <p class="color">个人客户最高达50万元。</p>
               </li>
           </ul>
+          <p class="fs28 c-808080 mt20">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
       </div>
   </div>
 </template>

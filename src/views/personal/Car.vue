@@ -82,6 +82,7 @@
                 <a class="fl" href="javascript:;">
                     <img class="small" src="/static/images/car_mark07.png" alt=""> </a>
             </div>
+            <p class="pb45 fs28 c-808080 text-center">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
         </div>
         <!--文字部分-->
         <div class="buycar-txt-intro">
@@ -340,5 +341,10 @@ footer.personal-buycar-pb125 {
 
 .footer-css{
     margin-bottom: 1.3rem!important;
+}
+
+.pb45 {
+    line-height: 1;
+    padding-bottom: 0.45rem;
 }
 </style>

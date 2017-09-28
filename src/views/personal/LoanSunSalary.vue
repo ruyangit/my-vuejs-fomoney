@@ -21,6 +21,7 @@
                 <span>等额本息</span>
             </h3>
             <p class="fs28">复星员工专属信用贷，审批快、无抵押。资料齐全后3日即可完成审批。</p>
+            <p class="fs28">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>

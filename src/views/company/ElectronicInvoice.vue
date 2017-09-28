@@ -67,6 +67,7 @@
                 <p class="detail">提供从电子发票到整合营销的全套方案，帮助客户实现用户从线下到线上的联通</p>
               </li>
             </ol>
+            <p class="fs28 text-center">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
          </div>
       </div>
       <z-footer></z-footer>

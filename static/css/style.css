@@ -30,6 +30,10 @@
     margin-top: 0.1rem;
 }
 
+.mt20 {
+    margin-top: 0.2rem;
+}
+
 .mt30 {
     margin-top: 0.3rem;
 }
@@ -284,6 +288,9 @@ footer p {
     padding-bottom: 0.2rem;
 }
 
+.a-tel {
+    color: #00a5fa;
+}
 
 /*新闻中心*/
 
