@@ -20,6 +20,9 @@
             <swiper-slide class="swiper-slide">
               <img src="/static/images/index_banner04.jpg" alt="让科技服务金融">
             </swiper-slide>
+            <swiper-slide class="swiper-slide">
+              <img src="/static/images/index_banner05.jpg" alt="用价值投资">
+            </swiper-slide>
             <!-- Add Pagination -->
             <div class="swiper-pagination" slot="pagination"></div>
           </swiper>
@@ -33,7 +36,7 @@
             <div class="li" @click="zDetarget('al1')">
               <a class="load-serve" href="javascript:;">
                 <img src="/static/images/icon_daikuan.png" alt="贷款业务">
-                <h3>信贷业务</h3>
+                <h3>融资服务</h3>
               </a>
             </div>
           </swiper-slide>
@@ -54,10 +57,10 @@
             </div>
           </swiper-slide>
           <swiper-slide class="swiper-slide">
-            <div class="li" @click="zDetarget('al3')">
-              <a class="finance-tech" href="javascript:;">
-                <img src="/static/images/icon_keji.png" alt="金融科技">
-                <h3>银行集团</h3>
+            <div class="li" @click="zDetarget('al4')">
+              <a class="invest-manage" href="javascript:;">
+                <img src="/static/images/icon_invest.png" alt="投资管理">
+                <h3>投资管理</h3>
               </a>
             </div>
           </swiper-slide>
@@ -69,11 +72,11 @@
     <!--贷款业务弹框-->
     <transition name="fade">
     <div class="index-modal-box modal-load" v-show="al1">
-      <h2>信贷业务</h2>
+      <h2>融资服务</h2>
       <p>为了帮助个人及企业用户合理规划成本并且努力实现资产利用最大化，复星金服信贷业务以消费金融及供应链金融为两大主线。消费金融以健康，旅游，时尚消费，文化，居家，出行为场景，满足年轻用户品质生活的一站式需求；供应链金融是以产业为依托，深耕产业链，为其上下游企业提供流动性支持以及综合金融服务。</p>
       <img class="modal-img01" src="/static/images/modal_img01.png" alt="" >
       <div class="modal-btn-box clearfix">
-        <router-link to="/personal/loansunlearn" class="fl">消费金融 >></router-link>
+        <router-link to="/personal/loansunattived" class="fl">消费金融 >></router-link>
         <router-link to="/company/loanplatform" class="fr">供应链金融 >></router-link>
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al1')">
@@ -83,9 +86,8 @@
     <transition name="fade">
     <div class="index-modal-box modal-money" v-show="al2">
       <h2>财富管理</h2>
-      <div class="bg-circle">
-        财富管理是一种财富的传承，它不仅是物质的传承，也是一种精神的传承，更是一种文化传承。
-      </div>
+      <!-- <div class="bg-circle"></div>  -->
+      <img class="modal-img02" src="/static/images/modal_img02.png" alt="" >     
       <p>财富管理的基础是建立在对人和对文化的认同上的信任，复星金服以复星文化和投资理念为基础，以客户的需求为核心，综合考虑风险、收益、流动性、可行性等因素，借助保险、信托、证券化、结构性产品等金融工具，设计系统的、有效合理的整体财富架构。</p>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al2')">
     </div>
@@ -100,6 +102,16 @@
         <router-link to="/company/techcredit" >体验金融科技服务 >></router-link>
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al3')">
+    </div>
+    </transition>
+    <!--投资管理弹框-->
+    <transition name="fade">
+    <div class="index-modal-box modal-invest" v-show="al4">
+      <h2>投资管理</h2>
+      <img class="modal-img04" src="/static/images/modal_img04.png" alt="" >
+      <p>遵循复星集团“中国动力嫁接全球资源”的投资模式，复星金服通过对宏观与微观经济趋势的深入了解以及对全球金融市场情况的深入分析，捕捉受惠于中国成长动力的投资机会，通过战略投资、二级市场投资等形式，对全球银行、信托、融资租赁、金融科技以及相关领域布局，助力集团实现C2M战略。目前，复星成功投资了葡萄牙千禧银行（BCP）、浙江网商银行在内的一级市场及数个二级市场、债券市场资产配置项目。
+      </p>     
+      <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al4')">
     </div>
     </transition>
   </div>
@@ -123,6 +135,7 @@ export default {
         paginationClickable: true,
         spaceBetween: 30,
         loop: true,
+        autoplayDisableOnInteraction: false,
         onSlideChangeEnd: swiper => {
           //这个位置放swiper的回调方法  
           this.page = swiper.realIndex + 1;
@@ -138,6 +151,7 @@ export default {
       al1:false,
       al2:false,
       al3:false,
+      al4:false,
     }
   },
   components: {
@@ -165,6 +179,8 @@ export default {
         this.al2 = !this.al2
       }else if(al==="al3"){
         this.al3 = !this.al3
+      }else if(al==="al4"){
+        this.al4 = !this.al4
       }
     }
   }
@@ -176,10 +192,6 @@ export default {
 .index-container {
   padding: 0.8rem 0 0 0;
 }
-
-
-
-
 
 
 
@@ -212,11 +224,6 @@ export default {
 .index-container .banner-box .swiper-pagination-bullet-active {
   background: #c9a96e;
 }
-
-
-
-
-
 
 
 
@@ -314,18 +321,6 @@ export default {
   padding-bottom: 0;
 }
 
-.modal-money .bg-circle {
-  width: 2.56rem;
-  height: 2.45rem;
-  background: url(/static/images/modal_img02.png) no-repeat center center;
-  margin: 0.3rem auto;
-  background-size: 2.56rem 2.45rem;
-  color: #6ca9fa;
-  line-height: 1.2;
-  font-size: 0.2rem;
-  padding: 0.5rem 0.3rem;
-}
-
 .modal-money .modal-close {
   margin-top: 2.2rem;
 }
@@ -335,9 +330,25 @@ export default {
   margin: 0 auto;
 }
 
+.modal-money .modal-img02 {
+  width: 2.18rem;
+  height: 2.23rem;
+  margin: 0.4rem 0 0.56rem;
+}
+
 .modal-finance .modal-img03 {
   width: 1.8rem;
   height: 1.16rem;
   margin: 0.8rem 0 1.8rem;
+}
+
+.modal-invest .modal-img04 {
+  width: 1.87rem;
+  height: 1.21rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.modal-invest .modal-close {
+  margin-top: 2rem;
 }
 </style>
