@@ -28,11 +28,11 @@ export default {
 	data() {
 		return {
 			hMenu: [
-				{
-					text: '星学贷',
-					url: '/personal/loansunlearn',
-					isShow: true
-				},				
+				// {
+				// 	text: '星学贷',
+				// 	url: '/personal/loansunlearn',
+				// 	isShow: true
+				// },				
 				{
 					text: '星抵贷',
 					url: '/personal/loansunattived',
@@ -78,7 +78,7 @@ export default {
 </script>
 <style scoped>
 .personal-tab-box .item {
-	width: 2.3rem;
+	width: 3.45rem;
 }
 
 .xing-box {

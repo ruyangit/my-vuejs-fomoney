@@ -9,6 +9,7 @@
             <p>1）标准化审批流程</p>
             <p>2）控制欺诈风险与信用风险，减少损失</p>
             <p>3）降低审批成本，提升审批效率</p>
+            <p class="fs28 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>

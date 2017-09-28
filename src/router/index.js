@@ -8,7 +8,7 @@ const Index = r => require.ensure([], () => r(require('@/views/Index')), 'index'
 const Personal = r => require.ensure([], () => r(require('@/views/personal/Index')), 'personal')
 const PersonalCar = r => require.ensure([], () => r(require('@/views/personal/Car')), 'personal')
 const PersonalLayout = r => require.ensure([], () => r(require('@/views/personal/Layout')), 'personal')
-const PersonalLoanSunLearn = r => require.ensure([], () => r(require('@/views/personal/LoanSunLearn')), 'personal')
+// const PersonalLoanSunLearn = r => require.ensure([], () => r(require('@/views/personal/LoanSunLearn')), 'personal')
 const PersonalLoanSunSalary = r => require.ensure([], () => r(require('@/views/personal/LoanSunSalary')), 'personal')
 const PersonalLoanSunAttived = r => require.ensure([], () => r(require('@/views/personal/LoanSunAttived')), 'personal')
 
@@ -68,10 +68,11 @@ export default new Router({
         {
             path: '/personal',
             component: PersonalLayout,
-            children: [{
-                    path: 'loansunlearn',
-                    component: PersonalLoanSunLearn
-                },
+            children: [
+                // {
+                //     path: 'loansunlearn',
+                //     component: PersonalLoanSunLearn
+                // },
                 {
                     path: 'loansunsalary',
                     component: PersonalLoanSunSalary

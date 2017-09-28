@@ -7,14 +7,16 @@
             <div class="text-center">
                 <img src="/static/images/company_carlease_img01.jpg" alt="汽车租赁">
             </div>
-            <p>以专业的产品设计、高效的运营系统、优质的客服服务</p>
+            <p>以专业的产品设计、高效的运营系统、优质的客户服务</p>
             <p>为企业提供专属的汽车金融解决方案</p>
             <p>汽车经销商：库存融资产品、试乘试驾产品</p>
             <p>经营性租赁公司：购车产品</p>
-            <p>企业：清障车产品、牵引车产品</p>
-            <a class="btn" href="javascript:;"   @click="isShow=!isShow">我要申请</a>
+            <p>其他企业：清障车产品、牵引车产品</p>
+            <a class="btn" href="javascript:;"   @click="isShow=!isShow">我要申请</a>            
         </div>
-        <div class="company-carlease-bg"></div>
+        <div class="company-carlease-bg">
+            <p class="fs28 text-center c-808080 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+        </div>
         <!--弹框-->
         <transition name="fade">
             <div class="apply-box" v-show="isShow">

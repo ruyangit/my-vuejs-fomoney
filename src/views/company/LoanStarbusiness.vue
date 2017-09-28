@@ -2,7 +2,7 @@
   <div class="item sbe active">
       <div class="banner"></div>
       <div class="content">
-          <p class="detail">针对银联商务POS收单、专业化服务商户，个人客户最高达50万元的生产经营信用贷款。</p>
+          <p class="detail">针对银联商务POS收单、专业化服务商户，提供最高达50万元的生产经营信用贷款。</p>
           <h3>产品优势</h3>
           <ul>
               <li>
@@ -22,6 +22,7 @@
                   <p class="color">个人客户最高达50万元。</p>
               </li>
           </ul>
+          <p class="fs28 c-808080 mt20">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
       </div>
   </div>
 </template>

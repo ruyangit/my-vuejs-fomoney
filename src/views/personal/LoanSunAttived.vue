@@ -10,7 +10,7 @@
             </h3>
             <h3>
                 <label>贷款期限：</label>
-                <span>3个月</span>
+                <span>3个月以内</span>
             </h3>
             <h3>
                 <label>参考利息：</label>
@@ -20,7 +20,8 @@
                 <label>还款方式：</label>
                 <span>等额本息</span>
             </h3>
-            <p>主要针对上海、广州等范围内企业或个人的住宅房屋抵押贷款，提供简便、快速的审批流程，2个工作日的审批，7天放款。</p>
+            <p>主要针对上海、广州等范围内企业或个人的住宅房屋抵押贷款，提供简便、快速的审批流程，2个工作日审批，7天放款。</p>
+            <p class="fs28">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>

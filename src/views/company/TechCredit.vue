@@ -10,6 +10,7 @@
             <p>2）有效控制信用风险</p>
             <p>3）完善客户群的数据积累</p>
             <p>4）发掘潜在商机</p>
+            <p class="fs28 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>
