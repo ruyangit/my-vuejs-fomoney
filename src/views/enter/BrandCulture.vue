@@ -3,35 +3,43 @@
         <z-header goBack='true' headTitle="走进金服"></z-header>
          <section class="brand-culture">
 	    	<div class="title">
-	    		<span class="fs32">品牌文化</span>
+	    		<span class="fs32">企业文化</span>
 	    		<span class="fs24 english">Branding Culture</span>
-	    	</div>
-	    	<ul>
-	    		<li class="target">
-	    			<p>企业目标</p>
-	    			<span></span>
-	    			<div class="target-detail text-center">
-	    				<a>成为一家汇聚产业深度、全球广度和科</a>
-	    				<a class="detail">技高度的领先的综合性金融服务集团</a>
-	    			</div>
-	    		</li>
-	    		<li class="vision">
-	    			<p>企业愿景</p>
-	    			<span></span>
-	    			<div class="vision-detail text-center">
-	    				<a>共筑  健康  快乐  易金融</a>
-	    			</div>
-	    		</li>
-	    		<li class="mission">
-	    			<p>企业使命</p>
-	    			<span></span>
-	    			<div class="mission-detail text-center">
-	    				<a>用创新的、国际化的金融服务，助力中</a>
-	    				<a class="detail">国产业升级、消费升级</a>
-	    			</div>
-	    		</li>
-	    	</ul>
+	    	</div>	    	
 	    </section>
+		<div class="brand_banner"></div>
+		<ul class="brand_biaoyu">
+			<li><img src="/static/images/brand_biaoyu01.jpg" alt="诚信自发"></li>
+			<li><img src="/static/images/brand_biaoyu02.jpg" alt="务实精进"></li>
+			<li><img src="/static/images/brand_biaoyu03.jpg" alt="助善共达"></li>
+			<li><img src="/static/images/brand_biaoyu04.jpg" alt="诚信自发"></li>
+		</ul>
+		<ul class="brand_company">
+			<li>
+				<div class="content">
+					<span>01</span>
+					<h2 class="fs32 c-1a1a1a">企业目标</h2>
+					<div class="line"></div>
+					<p class="c-1a1a1a">成为一家汇聚产业深度、全球广度和科技高度的领先的综合性金融服务集团</p>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<span>02</span>
+					<h2 class="fs32 c-1a1a1a">企业愿景</h2>
+					<div class="line"></div>
+					<p class="c-1a1a1a">共筑 健康 快乐 易金融</p>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<span>03</span>
+					<h2 class="fs32 c-1a1a1a">企业使命</h2>
+					<div class="line"></div>
+					<p class="c-1a1a1a">用创新的、国际化的金融服务助力中国产业升级、消费升级</p>
+				</div>
+			</li>
+		</ul>
         <z-footer></z-footer>
     </div>
 </template>
@@ -47,25 +55,21 @@ export default {
 }
 </script>
 <style scoped>
-.brand-culture{padding: 0.8rem 0.3rem 1.8rem 0.3rem;width:7.5rem;margin: 0 auto;}
+.brand-culture{padding: 0.8rem 0.3rem 0.3rem 0.3rem;width:7.5rem;margin: 0 auto;}
 .brand-culture .title{height: 0.32rem;line-height: 0.32rem;padding: 0.45rem 0;}
 .brand-culture .title .english{color: #CCCCCC;position: relative;top:-0.03rem;left:0.1rem;}
-.brand-culture ul{margin-top: 0.25rem;}
-.brand-culture ul li{width: 6.9rem;height: 1.8rem;position: relative;}
-.brand-culture ul .target{background: url(/static/images/en_target.jpg) no-repeat center;background-size: 6.9rem 1.8rem;}
-.brand-culture ul .vision{background: url(/static/images/en_vision.jpg) no-repeat center;background-size: 6.9rem 1.8rem;margin-top: 0.8rem;}
-.brand-culture ul .mission{background: url(/static/images/en_mission.jpg) no-repeat center;background-size: 6.9rem 1.8rem;margin-top: 0.5rem;}
-.brand-culture ul li p{font-size: 0.32rem;position: absolute;}
-.brand-culture ul .target p{top:0.4rem;left:1rem;}
-.brand-culture ul .vision p{top: 0.3rem;right: 1.1rem;}
-.brand-culture ul .mission p{top: 0.4rem;left: 1rem;}
-.brand-culture ul li span{border-bottom: 0.03rem solid #c5ab60;position: absolute;width: 0.95rem;display: inline-block;}
-.brand-culture ul .target span{top: 1.2rem;left:1.2rem;}
-.brand-culture ul .vision span{top: 1.1rem;right: 1.25rem;}
-.brand-culture ul .mission span{top: 1.2rem;left: 1.2rem;}
-.brand-culture ul .target .target-detail,.brand-culture ul .mission .mission-detail{width: 3.45rem;background: rgba(102,102,102,0.5);height: 0.7rem;position: absolute;top: 1.45rem;left: 0;padding: 0.15rem 0;}
-.brand-culture ul .target .target-detail a,.brand-culture ul .mission .mission-detail a{color: #FFFFFF;display: block;font-size: 0.18rem;width: 3.45rem;height: 0.18rem;line-height: 0.18rem;}
-.brand-culture ul .target .target-detail .detail,.brand-culture ul .mission .mission-detail .detail{margin-top: 0.1rem;}
-.brand-culture ul .vision .vision-detail{width: 2.45rem;background: rgba(102,102,102,0.5);height: 0.4rem;line-height:0.4rem;position: absolute;top:1.55rem;right:0.5rem;padding: 0.05rem 0;}
-.brand-culture ul .vision .vision-detail a{color: #FFFFFF;display: block;font-size: 0.18rem;}
+.brand_banner{width:100%;height:2.8rem;background:url(/static/images/brand_banner.jpg) no-repeat center center;background-size:7.5rem 2.8rem;}
+.brand_biaoyu{margin:0 auto;width:7.5rem;}
+.brand_biaoyu li{margin-bottom:0.1rem;}
+.brand_biaoyu li img{width:7.5rem;height:1.8rem;}
+.brand_company{width:7.5rem;padding:0 0.3rem;margin:0.5rem auto 0;}
+.brand_company li{width:6.9rem;height:2rem;margin-bottom:0.5rem;box-shadow:0 0 0.2rem #f8f8f8;}
+.brand_company li:nth-child(1){background:url(/static/images/company_target.jpg) no-repeat center center;background-size:6.9rem 2rem;}
+.brand_company li:nth-child(2){background:url(/static/images/company_vision.jpg) no-repeat center center;background-size:6.9rem 2rem;}
+.brand_company li:nth-child(3){background:url(/static/images/company_mission.jpg) no-repeat center center;background-size:6.9rem 2rem;}
+.brand_company .content{padding-left:0.4rem;width:3.5rem;height:2rem;position:relative;}
+.brand_company .content span{position: absolute;top:-0.25rem;color:#ededed;font-size:0.6rem;line-height:1;}
+.brand_company .content h2{line-height:1;padding-top:0.5rem;}
+.brand_company .content .line{width:0.8rem;border-bottom:0.03rem solid #c5ab60;margin:0.18rem 0;}
+.brand_company .content p{font-size:0.18rem;line-height:1.5;}
 </style>
