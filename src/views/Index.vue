@@ -73,7 +73,7 @@
     <transition name="fade">
     <div class="index-modal-box modal-load" v-show="al1">
       <h2>融资服务</h2>
-      <p>为了帮助个人及企业用户合理规划成本并且努力实现资产利用最大化，复星金服信贷业务以消费金融及供应链金融为两大主线。消费金融以健康，旅游，时尚消费，文化，居家，出行为场景，满足年轻用户品质生活的一站式需求；供应链金融是以产业为依托，深耕产业链，为其上下游企业提供流动性支持以及综合金融服务。</p>
+      <p>为帮助个人及企业用户合理规划成本，实现资产最大化，复星金服提供高效、便捷、安全的融资服务，既以健康、居家、旅游、时尚、文化等为场景，满足用户品质生活的一站式金融服务需求；同时，又以产业为依托，深耕产业链，为其上下游企业提供流动性支持与综合金融服务。</p>
       <img class="modal-img01" src="/static/images/modal_img01.png" alt="" >
       <div class="modal-btn-box clearfix">
         <router-link to="/personal/loansunattived" class="fl">消费金融 >></router-link>
@@ -88,7 +88,7 @@
       <h2>财富管理</h2>
       <!-- <div class="bg-circle"></div>  -->
       <img class="modal-img02" src="/static/images/modal_img02.png" alt="" >     
-      <p>财富管理的基础是建立在对人和对文化的认同上的信任，复星金服以复星文化和投资理念为基础，以客户的需求为核心，综合考虑风险、收益、流动性、可行性等因素，借助保险、信托、证券化、结构性产品等金融工具，设计系统的、有效合理的整体财富架构。</p>
+      <p>以服务高成长、高价值客户为核心，以复星集团战略为基础，复星金服通过向客户提供现金、信用、保险、投资等一系列的金融服务，将客户的资产、负债、流动性进行管理，以满足客户不同阶段的财务需求，综合考虑风险、收益、流动性、可行性等因素，帮助客户达到降低风险，实现财富增值的目的。</p>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al2')">
     </div>
     </transition>
@@ -96,7 +96,7 @@
     <transition name="fade">
     <div class="index-modal-box modal-finance" v-show="al3">
       <h2>金融科技</h2>
-      <p>作为复星金服高科技内核，金融科技事业部坚持以科技引领金融，打造“电子支付”、“大数据征信”、“新兴技术”三大核心，携手各业务板块不断开拓创新，探索互联网金融新业务模式。</p>
+      <p>坚持以科技引领金融，链接现在与未来，复星金服充分利用云计算、大数据、人工智能、区块链等前沿技术，将科技运用于支付、征信、信贷等各个金融服务环节，携手各个业务板块，不断探索创新，开拓科技金融的创新业务模式。</p>
       <img class="modal-img03" src="/static/images/modal_img03.png" alt="" >
       <div class="modal-btn-box">
         <router-link to="/company/techcredit" >体验金融科技服务 >></router-link>

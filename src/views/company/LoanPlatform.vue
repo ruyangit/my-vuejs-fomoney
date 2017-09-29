@@ -10,10 +10,10 @@
                 <label>超高额度：</label>
                 <span>最高可借500万</span>
             </h3>
-            <h3>
+            <!-- <h3>
                 <label>超低日息：</label>
                 <span>按日计息，最低至万分之2.49</span>
-            </h3>
+            </h3> -->
             <h3>
                 <label>随借随还：</label>
                 <span>60天内随借随还</span>

@@ -97,7 +97,8 @@ export default {
         zFooter
     },
     created() {
-        this.defaultData = JSON.parse(JSON.stringify(this.myform));
+        this.defaultData = JSON.parse(JSON.stringify(this.myform));       
+        document.body.style.background='#fff';
     },
     methods: {
         async validateBeforeSubmit(scope) {

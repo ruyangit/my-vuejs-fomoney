@@ -12,10 +12,10 @@
                 <label>贷款期限：</label>
                 <span>3个月以内</span>
             </h3>
-            <h3>
+            <!-- <h3>
                 <label>参考利息：</label>
                 <span>10% ~ 24%</span>
-            </h3>
+            </h3> -->
             <h3>
                 <label>还款方式：</label>
                 <span>等额本息</span>

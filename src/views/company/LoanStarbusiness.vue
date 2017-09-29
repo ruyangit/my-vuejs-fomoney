@@ -2,24 +2,24 @@
   <div class="item sbe active">
       <div class="banner"></div>
       <div class="content">
-          <p class="detail">针对银联商务POS收单、专业化服务商户，提供最高达50万元的生产经营信用贷款。</p>
+          <p class="detail">复星金服“星商贷”是以银联POS机交易流水为依据，为小微商户发放的一种纯信用贷款，用于解决其生产经营活动过程中的流动资金需求。</p>
           <h3>产品优势</h3>
           <ul>
               <li>
+                  <p class="texcolor">授信期限长</p>
+                  <p class="color">额度及用款期限最长可达12个月；</p>
+              </li>
+              <li>
                   <p class="texcolor">无需抵押</p>
-                  <p class="color">无需抵押，以商户POS流水数据作为授信依据；</p>
+                  <p class="color">以实际经营、家庭资产、个人信用等作为授信依据；</p>
               </li>
               <li>
-                  <p class="texcolor">审批快捷</p>
-                  <p class="color">放款速度快，贷款支用审批通过后即放款；</p>
-              </li>
-              <li>
-                  <p class="texcolor" >灵活便利</p>
-                  <p class="color">贷款期限长，最长可达12个月，最长授信3年，授信期内可多次使用；</p>
+                  <p class="texcolor" >方便快捷</p>
+                  <p class="color">审批简便、放款快捷，审批通过后闪电放款；</p>
               </li>
               <li>
                   <p class="texcolor">授信额度高</p>
-                  <p class="color">个人客户最高达50万元。</p>
+                  <p class="color">授信最高达50万元。</p>
               </li>
           </ul>
           <p class="fs28 c-808080 mt20">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>

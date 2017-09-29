@@ -7,11 +7,11 @@
                 <div class="contact-address-info">
                     <h3>集团公司地址</h3>
                     <p>
-                        <img src="/static/images/icon_phone.png" alt="电话">客服热线：400-700-8808</p>
+                        <img src="/static/images/icon_phone.png" alt="电话">客服热线：<a class="c-808080" href="tel:400-700-8808">400-700-8808</a></p>
                     <p>
                         <img src="/static/images/icon_email.png" alt="邮箱">客服邮箱：fxjfkf@fosun.com</p>
                     <p>
-                        <img src="/static/images/icon_weizhi.png" alt="地址">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：上海市徐汇区宜山路1289号（克隆科技园）B栋9F</p>
+                        <img src="/static/images/icon_weizhi.png" alt="地址">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：上海市徐汇区宜山路1289号（克隆科技园）B栋</p>
                 </div>
                 <!--咨询留言-->
                 <form @submit.prevent="validateBeforeSubmit('myform')" data-vv-scope="myform">
