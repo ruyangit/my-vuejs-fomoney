@@ -11,7 +11,7 @@
                         <div class="line"></div>
                     </router-link>
                     <router-link to="/enter/leadershipteam" class="function function-bg2 mt10">
-                        <h3>领导团队</h3>
+                        <h3>团队介绍</h3>
                         <div class="line"></div>
                     </router-link>
                     <router-link to="/enter/brandculture" class="function function-bg3 mt10">
