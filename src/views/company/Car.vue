@@ -15,7 +15,7 @@
             <a class="btn" href="javascript:;"   @click="isShow=!isShow">我要申请</a>            
         </div>
         <div class="company-carlease-bg">
-            <p class="fs28 text-center c-808080 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+            <p class="fs28 text-center c-808080 mt30">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
         </div>
         <!--弹框-->
         <transition name="fade">

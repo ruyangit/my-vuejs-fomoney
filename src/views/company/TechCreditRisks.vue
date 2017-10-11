@@ -11,7 +11,7 @@
             <p>3）建立风险预警制度，帮助企业识别潜在风险</p>
             <p>4）完善客户忠诚度管理，提升客户体验与客户忠诚度</p>
             <p>5）差异化的催收策略，降低催收成本</p>
-            <p class="fs28 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+            <p class="fs28 mt30">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;" @click="myModel=true">我要申请</a>

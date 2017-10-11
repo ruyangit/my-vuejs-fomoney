@@ -35,7 +35,7 @@
                     <img src="/static/images/company_ptd_icon04.png" alt="钢银电商">
                 </div>
             </div>
-            <p class="fs28">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+            <p class="fs28">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;"  @click="isShow=!isShow">我要申请</a>
