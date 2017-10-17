@@ -77,7 +77,7 @@
       <img class="modal-img01" src="/static/images/modal_img01.png" alt="" >
       <div class="modal-btn-box clearfix">
         <router-link to="/personal/loansunattived" class="fl">个人融资 >></router-link>
-        <router-link to="/company/loanplatform" class="fr">企业融资 >></router-link>
+        <router-link to="/company/loanstarbusiness" class="fr">企业融资 >></router-link>
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al1')">
     </div>
