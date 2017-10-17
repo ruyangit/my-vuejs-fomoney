@@ -106,10 +106,10 @@
                             <tr>
                                 <td>
                                     <label for="name">
-                                        <span>* </span>名称：</label>
+                                        <span>* </span>姓名：</label>
                                 </td>
                                 <td>
-                                    <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入名称" name="name">
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入姓名" name="name">
                                 </td>
                             </tr>
                             <tr>
@@ -128,10 +128,10 @@
                             <tr>
                                 <td>
                                     <label for="phone">
-                                        <span>* </span>电话：</label>
+                                        <span>* </span>联系电话：</label>
                                 </td>
                                 <td>
-                                    <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入电话" name="phone">
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.phone') }" v-validate="'required|phone'" v-model="myform.phone" type="text" placeholder="请输入联系电话" name="phone">
                                 </td>
                             </tr>
                             <tr>
@@ -178,6 +178,7 @@ export default {
         zFooter
     },
     created() {
+        document.body.style.background='#fff';
         this.defaultData = JSON.parse(JSON.stringify(this.myform));
     },
     methods: {

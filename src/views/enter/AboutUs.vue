@@ -3,11 +3,11 @@
         <z-header goBack='true' headTitle="走进金服"></z-header>
          <!--内容-->
         <div class="container enter-common-container enter-aboutus-container">
-            <h2>公司介绍<span>ABOUT  US</span></h2>
+            <h2>公司介绍</h2>
             <p>复星金服是复星集团旗下综合性金融服务平台。复星集团“以家庭客户为中心”、“深耕健康、快乐、富足，通过深度产业运营、整合和投资，以智造复星C2M幸福生态系统”为愿景与使命。作为复星富足板块的重要组成部分，复星金服秉承与贯彻集团战略，提供一系列领先的金融服务。</p>
             <p class="mt40">复星金服在融资服务、财富管理、金融科技以及投资管理等相关领域进行布局及运营，以复星钱包作为主要入口，聚焦中国高成长、高价值用户，打造一家汇聚产业深度、全球广度和科技高度的领先的综合性金融服务平台
             </p>
-            <h4>共创 “ <span>  健康、快乐、易金融   </span> ” </h4>
+            <h4>共创 “ <span>  健康、快乐、星金融   </span> ” </h4>
             <h3>金服家园</h3>
             <div class="family">
                 <div class="first-line text-center">
@@ -15,19 +15,23 @@
                     <a class="alert-cfzl" href="javascript:;" @click="zDetarget('al1')"><img src="/static/images/enter_logo02.png" alt="Great China"></a>
                     <a href="javascript:;" @click="zDetarget('al2')"><img src="/static/images/enter_logo03.png" alt="复星云通小贷"></a>
                 </div>
-                <div class="second-line text-center">
+                <div class="second-line">
                     <a href="javascript:;" @click="zDetarget('al3')"><img src="/static/images/enter_logo04.png" alt="广信小贷"></a>
                     <a href="javascript:;" @click="zDetarget('al4')"><img src="/static/images/enter_logo05.png" alt="星联保理"></a>
+                    <a href="javascript:;" @click="zDetarget('al9')"><img src="/static/images/enter_logo12.png" alt="康健租赁"></a>                    
+                </div>
+                <div class="three-line text-center line-pl165">
                     <a href="javascript:;" @click="zDetarget('al5')"><img src="/static/images/enter_logo06.png" alt="星之灵"></a>
                     <a href="javascript:;"><img src="/static/images/enter_logo07.png" alt="财富管理"></a>
                 </div>
-                <div class="three-line text-center">
+                <div class="four-line">
                     <a href="javascript:;"><img src="/static/images/enter_logo08.png" alt="金融科技"></a>
                     <a href="javascript:;" @click="zDetarget('al6')"><img src="/static/images/enter_logo09.png" alt="量富征信"></a>
                     <a href="javascript:;" @click="zDetarget('al7')"><img src="/static/images/enter_logo10.png" alt="统统付"></a>
                 </div>
-                <div class="four-line text-center">
-                    <a class="a-bank-logo" href="javascript:;" @click="zDetarget('al8')"><img src="/static/images/enter_logo11.png" alt="投资团队"></a>
+                <div class="five-line text-center line-pl165">
+                    <a href="javascript:;" @click="zDetarget('al8')"><img src="/static/images/enter_logo13.png" alt="投资团队"></a>
+                    <a href="javascript:;"><img src="/static/images/enter_logo11.png" alt="投资管理"></a>
                 </div>
             </div>
         </div>
@@ -69,6 +73,15 @@
                 </div>
                 <h2>星联保理</h2>
                 <p>上海星联商业保理有限公司和深圳星联商业保理有限公司是复星集团旗下为客户提供综合金融服务的两家商业保理有限公司。公司致力于向供应链用户提供专业化的金融服务，并通过多元化的金融工具的组合与创新，为用户提供高效、有价值的综合金融服务，同时，专注于物流、医疗、工程、钢铁、大宗商品等方面的保理业务。</p>
+            </div>
+        </transition>
+        <transition name="fade">
+            <div class="modal-common enter-alert-details" v-show="al9" @click="zDetarget('al9')">
+                <div class="modal-cfzl">
+                    <!-- <img src="/static/images/alert_xlbl.png" alt="" class="img-cfzl4"> -->
+                </div>
+                <h2>康健租赁</h2>
+                <p>复星康健融资租赁（上海）有限公司是复星集团旗下一家专注于公立医院、民营医院、医疗美容诊所、连锁式牙科诊所等健康医疗产业提供服务的融资租赁公司。公司紧紧围绕着“健康、快乐、富足”的理念，为大健康行业现金流充裕的客户提供设备的直租和回租服务，解决客户的设备需求，盘活资金，为健康医疗产业链中的机构和企业提供全方位、专业化、一站式的金融服务。</p>
             </div>
         </transition>
         <transition name="fade">
@@ -123,7 +136,8 @@ export default {
             al5:false,
             al6:false,
             al7:false,
-            al8:false
+            al8:false,
+            al9:false
         }
     },
     components:{
@@ -148,6 +162,8 @@ export default {
                 this.al7=!this.al7
             }else if(al == 'al8'){
                 this.al8=!this.al8
+            }else if(al == 'al9'){
+                this.al9=!this.al9
             }
         }
     }
@@ -160,9 +176,9 @@ export default {
 .enter-aboutus-container h4 span{color:#1a1a1a;font-weight:bold;}
 .enter-aboutus-container h3{color:#1a1a1a;padding-bottom:0.2rem;}
 .enter-aboutus-container .family a{width:1.65rem;height:1.95rem;display:inline-block;}
-.enter-aboutus-container .family .a-bank-logo{margin:0.02rem 0 0 1.75rem;}
 .enter-aboutus-container .family a img{width:1.65rem;height:1.95rem;}
-.enter-aboutus-container .family .second-line,.enter-aboutus-container .family .three-line,.enter-aboutus-container .family .four-line{margin-top:-0.4rem;}
+.enter-aboutus-container .family .second-line,.enter-aboutus-container .family .three-line,.enter-aboutus-container .family .four-line,.enter-aboutus-container .family .five-line{margin-top:-0.4rem;}
+.enter-aboutus-container .family .line-pl165{padding-left:1.65rem;}
 .enter_aboutus_bg{background:url(/static/images/enter_aboutus_bg.jpg) no-repeat center center;background-size:7.5rem 4.82rem;width:7.5rem;height:4.82rem;margin:-2.8rem auto 0;}
 .enter_aboutus_footer{margin-top:-1.4rem;}
 /*模态框公司详情*/

@@ -15,7 +15,7 @@
                         <div class="line"></div>
                     </router-link>
                     <router-link to="/enter/brandculture" class="function function-bg3 mt10">
-                        <h3>品牌文化</h3>
+                        <h3>企业文化</h3>
                         <div class="line"></div>
                     </router-link>
                 </div>

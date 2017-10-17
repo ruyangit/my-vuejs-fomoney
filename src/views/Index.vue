@@ -29,7 +29,7 @@
           <!--</div>-->
         </div>
       </div>
-      <!--3个功能块-->
+      <!--4个功能块-->
       <div class="function-box">
         <swiper :options="zb">
           <swiper-slide class="swiper-slide">
@@ -76,8 +76,8 @@
       <p>为帮助个人及企业用户合理规划成本，实现资产最大化，复星金服提供高效、便捷、安全的融资服务，既以健康、居家、旅游、时尚、文化等为场景，满足用户品质生活的一站式金融服务需求；同时，又以产业为依托，深耕产业链，为其上下游企业提供流动性支持与综合金融服务。</p>
       <img class="modal-img01" src="/static/images/modal_img01.png" alt="" >
       <div class="modal-btn-box clearfix">
-        <router-link to="/personal/loansunattived" class="fl">消费金融 >></router-link>
-        <router-link to="/company/loanplatform" class="fr">供应链金融 >></router-link>
+        <router-link to="/personal/loansunattived" class="fl">个人融资 >></router-link>
+        <router-link to="/company/loanplatform" class="fr">企业融资 >></router-link>
       </div>
       <img class="modal-close" src="/static/images/icon_close.png" alt="关闭"  @click="zDetarget('al1')">
     </div>
@@ -144,7 +144,7 @@ export default {
       },
       zb: {
         notNextTick: true,
-        slidesPerView: 3.5,
+        slidesPerView: 4,   //设置slider容器能够同时显示的slides数量，可以是小数，例如3.5，就是显示3个完整的和1个一半的，滑动可以让另一半显示
         paginationClickable: true,
         spaceBetween: 10
       },
@@ -230,7 +230,7 @@ export default {
 /*3个功能块*/
 
 .index-container .function-box {
-  padding: 0.3rem;
+  padding: 0.3rem 0.2rem;
 }
 
 .index-container .function-box .li {

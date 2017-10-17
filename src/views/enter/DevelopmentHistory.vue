@@ -4,7 +4,6 @@
          <section class="development-history">
 	    	<div class="title">
 	    		<span class="fs32">发展历程</span>
-	    		<span class="fs24 english">DEVELOPMENT HISTORY</span>
 	    	</div>
 	    	<div class="content">
 	    		<div class="history history2017">
@@ -12,42 +11,32 @@
 					<div class="clearfix mt20">
 						<div class="fl left">
 							<div class="dashed-line dashed-line63 mt20"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line63"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line164"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line63"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line110"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line63"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
-							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
+							<div class="dashed-line dashed-line100 h80"></div>
 						</div>
-						<div class="fl right">
+						<div class="fl right y2017">
 							<div class="time-minutes clearfix"><span class="fl zh">7月</span><span class="fl en">Jul</span></div>
-							<p>复星康健融资租赁（上海）有限公司成立</p>
+							<p><span class="round1"></span>复星康健融资租赁（上海）有限公司成立</p>
 							<div class="time-minutes clearfix"><span class="fl zh">6月</span><span class="fl en">Jun</span></div>
-							<p>上海遇志投资管理有限公司更名为掌星宝（上海）网络科技有限公司</p>
-							<p>复星金服电子发票云平台上线</p>							
-							<p>量富征信取得企业征信报告（标准版）、企业征信报告（供应链版）和企业征信报告（政府合作版）软件著作权登记证书</p>
+							<p><span class="round1"></span>上海遇志投资管理有限公司更名为掌星宝（上海）网络科技有限公司</p>
+							<p><span class="round1"></span>复星金服电子发票云平台上线</p>							
+							<p><span class="round1"></span>量富征信取得企业征信报告（标准版）、企业征信报告（供应链版）和企业征信报告（政府合作版）软件著作权登记证书</p>
 							<div class="time-minutes clearfix"><span class="fl zh">5月</span><span class="fl en">May</span></div>
-							<p>量富征信联合汇通租赁上线风险管理解决方案，打造融资租赁行业领先的贷前、贷中、贷后评分卡</p>
-							<p>复星金服“星商贷”业务上线</p>
+							<p><span class="round1"></span>量富征信联合汇通租赁上线风险管理解决方案，打造融资租赁行业领先的贷前、贷中、贷后评分卡</p>
+							<p><span class="round1"></span>复星金服“星商贷”业务上线</p>
 							<div class="time-minutes clearfix"><span class="fl zh">3月</span><span class="fl en">Mar</span></div>
-							<p>星联保理链接C2M平台，与阳光印网、摩贝网等达成战略合作</p>
-							<p>云通小贷获得优秀科技金融创新奖</p>
-							<p>量富征信、复星钱包入驻“诚信上海APP”</p>
+							<p><span class="round1"></span>星联保理链接C2M平台，与阳光印网、摩贝网等达成战略合作</p>
+							<p><span class="round1"></span>云通小贷获得优秀科技金融创新奖</p>
+							<p><span class="round1"></span>量富征信、复星钱包入驻“诚信上海APP”</p>
 							<div class="time-minutes clearfix"><span class="fl zh">2月</span><span class="fl en">Feb</span></div>
-							<p>创富融资租赁被授权为迈凯伦特许金融服务商</p>
+							<p><span class="round1"></span>创富融资租赁被授权为迈凯伦特许金融服务商</p>
 						</div>
 					</div>
 				</div>
@@ -56,42 +45,32 @@
 					<div class="clearfix mt20">
 						<div class="fl left">
 							<div class="dashed-line dashed-line63 mt20"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line42"></div>
-							<span class="round"></span>
-							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
+							<div class="dashed-line dashed-line100 h80"></div>
 						</div>
-						<div class="fl right">
+						<div class="fl right y2016">
 							<div class="time-minutes clearfix"><span class="fl zh">12月</span><span class="fl en">Dec</span></div>
-							<p>云通小贷“平台贷”业务上线</p>
-							<p>量富征信取得云审批SaaS系统软件著作权登记证书</p>
+							<p><span class="round1"></span>云通小贷“平台贷”业务上线</p>
+							<p><span class="round1"></span>量富征信取得云审批SaaS系统软件著作权登记证书</p>
 							<div class="time-minutes clearfix"><span class="fl zh">11月</span><span class="fl en">Nov</span></div>
-							<p>广信小贷针对复星员工定制的“星薪贷”产品上线</p>
-							<p>广信小贷普惠金融产品“星抵贷”上线</p>							
-							<p>复星投资葡萄牙最大的私人银行BCP</p>
+							<p><span class="round1"></span>广信小贷针对复星员工定制的“星薪贷”产品上线</p>
+							<p><span class="round1"></span>广信小贷普惠金融产品“星抵贷”上线</p>							
+							<p><span class="round1"></span>复星投资葡萄牙最大的私人银行BCP</p>
 							<div class="time-minutes clearfix"><span class="fl zh">10月</span><span class="fl en">Oct</span></div>
-							<p>广信小贷第一个消费分期产品“星家贷”上线</p>
-							<p>复星钱包正式推出</p>
+							<p><span class="round1"></span>广信小贷第一个消费分期产品“星家贷”上线</p>
+							<p><span class="round1"></span>复星钱包正式推出</p>
 							<div class="time-minutes clearfix"><span class="fl zh">7月</span><span class="fl en">Jul</span></div>
-							<p>深圳星联商业保理有限公司成立</p>
-							<p>广信小贷第一个供应链金融项目“药师帮”上线</p>
+							<p><span class="round1"></span>深圳星联商业保理有限公司成立</p>
+							<p><span class="round1"></span>广信小贷第一个供应链金融项目“药师帮”上线</p>
 							<div class="time-minutes clearfix"><span class="fl zh">3月</span><span class="fl en">Mar</span></div>
-							<p>广信小贷第一个产品“星学贷”上线</p>
+							<p><span class="round1"></span>广信小贷第一个产品“星学贷”上线</p>
 						</div>
 					</div>
 				</div>
@@ -100,27 +79,22 @@
 					<div class="clearfix mt20">
 						<div class="fl left">
 							<div class="dashed-line dashed-line63 mt20"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line130"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
 							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
-							<div class="dashed-line dashed-line100"></div>
-							<span class="round"></span>
+							<div class="dashed-line dashed-line100 h60"></div>
 						</div>
-						<div class="fl right">
+						<div class="fl right y2015">
 							<div class="time-minutes clearfix"><span class="fl zh">12月</span><span class="fl en">Dec</span></div>
-							<p>特斯拉官方授权创富融资租赁为特许金融服务商，目前为特斯拉唯一融资租赁企业</p>
+							<p><span class="round1"></span>特斯拉官方授权创富融资租赁为特许金融服务商，目前为特斯拉唯一融资租赁企业</p>
 							<div class="time-minutes clearfix"><span class="fl zh">9月</span><span class="fl en">Sep</span></div>
-							<p>广州复星云通小额贷款有限公司成立</p>
+							<p><span class="round1"></span>广州复星云通小额贷款有限公司成立</p>
 							<div class="time-minutes clearfix"><span class="fl zh">5月</span><span class="fl en">May</span></div>
-							<p>复星集团作为发起人之一，入股浙江网商银行</p>
+							<p><span class="round1"></span>复星集团作为发起人之一，入股浙江网商银行</p>
 							<div class="time-minutes clearfix"><span class="fl zh">4月</span><span class="fl en">Apr</span></div>
-							<p>量富征信管理有限公司成立</p>
+							<p><span class="round1"></span>量富征信管理有限公司成立</p>
 							<div class="time-minutes clearfix"><span class="fl zh">2月</span><span class="fl en">Feb</span></div>
-							<p>上海遇志投资管理有限公司成立</p>
+							<p><span class="round1"></span>上海遇志投资管理有限公司成立</p>
 						</div>
 					</div>
 				</div>
@@ -154,8 +128,6 @@
 						</div>
 					</div>
 				</div>
-
-
 	    	</div>
 	    </section>
         <z-footer></z-footer>
@@ -246,10 +218,43 @@ export default {
 .history .left .dashed-line164 {
 	height: 1.64rem;	
 }
-
+.history .left .h80 {
+	height: 60px;	
+}
 .history .right p {
 	width:6.2rem;
 	line-height: 1.2;
 	margin-top: 0.12rem;
+	font-size: 0.2rem;
 }
+
+.round1 {
+	width: 0.1rem;
+	height: 0.1rem;
+	background: #c9a96e;
+	display: inline-block;
+	border-radius: 50%;
+	position: absolute;
+	left: -0.25rem;
+	top: 0.07rem;
+}
+.y2017 p,.y2016 p,.y2015 p {
+	position: relative;
+}
+/* iphone6+ 系列手机 */
+@media only screen and (min-device-width: 375px)and (-webkit-min-device-pixel-ratio: 3) {
+  .history .left .h80 {
+	  height: 0.7rem;
+  }
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px)and (-webkit-min-device-pixel-ratio: 2) {
+	.history .left .h80 {
+		height: 90px;
+	}
+	.history .left .h60 {
+		height: 60px;
+	}
+}
+
 </style>

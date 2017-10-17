@@ -5,7 +5,7 @@
             <div class="contact-banner"></div>
             <div class="contact-content">
                 <div class="contact-address-info">
-                    <h3>集团公司地址</h3>
+                    <h3>公司地址</h3>
                     <p>
                         <img src="/static/images/icon_phone.png" alt="电话">客服热线：<a class="c-808080" href="tel:400-700-8808">400-700-8808</a></p>
                     <p>

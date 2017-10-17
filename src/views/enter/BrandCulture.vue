@@ -4,7 +4,6 @@
          <section class="brand-culture">
 	    	<div class="title">
 	    		<span class="fs32">企业文化</span>
-	    		<span class="fs24 english">Branding Culture</span>
 	    	</div>	    	
 	    </section>
 		<div class="brand_banner"></div>
@@ -28,7 +27,7 @@
 					<span>02</span>
 					<h2 class="fs32 c-1a1a1a">企业愿景</h2>
 					<div class="line"></div>
-					<p class="c-1a1a1a">共筑 健康 快乐 易金融</p>
+					<p class="c-1a1a1a">共筑 健康 快乐 星金融</p>
 				</div>
 			</li>
 			<li>

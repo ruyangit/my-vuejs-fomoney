@@ -94,7 +94,7 @@
                       <span>* </span>联系人：</label>
                     </td>
                     <td>
-                      <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入名称" name="name">
+                      <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入联系人" name="name">
                     </td>
                   </tr>
                   <tr>
