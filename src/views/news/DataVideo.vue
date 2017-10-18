@@ -1,7 +1,11 @@
 <template>
     <div class="data-item video-data data-active">
-    
-        <div class="every-box">
+        <div class="every-box" v-for="(item,index) in videoList" :key="index" @click="player(item)" v-show="!isPlay">
+            <!-- <video-player ref="videoPlayer" :options="playerOptions"></video-player> -->
+            <img :src="imgBaseUrl + item.originalImage" style="width:5.30rem;height:3.42rem;">
+            <img src="/static/images/play.png" style="position: absolute;width: 60px;height: 60px;top: 39%;left: 42%;">
+        </div>
+        <div class="every-box" v-show="isPlay">
             <video-player ref="videoPlayer" :options="playerOptions"></video-player>
         </div>
     </div>
@@ -14,7 +18,8 @@ import { imgBaseUrl, fileBaseUrl } from '@/api/env'
 export default {
     data() {
         return {
-            video: {},
+            videoList:[],
+            isPlay:false,
             imgBaseUrl,
             fileBaseUrl,
             playerOptions: {}
@@ -30,27 +35,23 @@ export default {
                 pageSize: 30,
                 categoryId: '7668bfe804874c958716ee0b12f757ad'
             }
-            api.get('/v1/article/list', config).then(response => {
+            await api.get('/v1/article/list', config).then(response => {
                 if (response.status == 200 && response.data.code == 200) {
-                    let list = response.data.data.list
-                    if (list) {
-                        this.video = list[0]
-                    }
+                    this.videoList = response.data.data.list
                 }
             });
-
         },
-        detail() {
+        player(e) {
 
             const config = {
-                id: this.video.id
+                id: e.id
             }
             api.get('/v1/link/item', config).then(response => {
                 if (response.status == 200 && response.data.code == 200) {
                     if (response.data.data.linkFilesUrl) {
                         // this.videoShow = true
                         // this.playerOptions.sources.src = fileBaseUrl + response.data.data.linkFilesUrl.split('|')[0]
-                        const poster = this.imgBaseUrl + this.video.originalImage
+                        const poster = this.imgBaseUrl + e.originalImage
                         const src = fileBaseUrl + response.data.data.linkFilesUrl.split('|')[0]
                         // console.log(poster)
                         // console.log(src)
@@ -69,7 +70,9 @@ export default {
                                 src: src
                             }],
                             poster: poster,
+                            autoplay: true,
                         }
+                        this.isPlay = true
                     }
                 }
             });
@@ -80,9 +83,9 @@ export default {
     },
     watch: {
         'video'() {
-            if (this.video) {
-                this.detail()
-            }
+            // if (this.video) {
+            //     this.detail()
+            // }
         }
     }
     // beforeDestroy: function () {

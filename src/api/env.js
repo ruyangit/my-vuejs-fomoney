@@ -15,7 +15,6 @@ let fileBaseUrl = 'http://www.fosunfinancial.com';
 
 if (process.env.NODE_ENV == 'development') {
 }else if(process.env.NODE_ENV == 'production'){
-	// baseUrl = 'https://api.douban.com';
 }
 
 export {
