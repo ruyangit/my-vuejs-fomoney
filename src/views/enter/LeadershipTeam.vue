@@ -1,11 +1,13 @@
 <template>
     <div>
         <!-- 弹框 -->
-        <div class="bigImgBox" v-show="showBox">
-            <div class="closeBox" @click="hiddenAlert">
-                 <img src="/static/images/icon_close.png" alt="关闭">
-            </div>           
-            <img class="big-team" src="/static/images/team2.jpg" alt="领导团队" >
+        <div class="bg-black">
+            <div class="bigImgBox" v-show="showBox">
+                <div class="closeBox" @click="hiddenAlert">
+                    <img src="/static/images/icon_close.png" alt="关闭">
+                </div>           
+                <img class="big-team" src="/static/images/team2.jpg" alt="领导团队" >
+            </div>
         </div>
         <!-- 头部 -->
         <z-header goBack='true' headTitle="走进金服"></z-header>
@@ -55,12 +57,18 @@ export default {
     methods: {
        showAlert () {
            this.showBox = true
+           $('.bg-black').css({
+                display: 'block'
+            })
            $('.pinch-zoom-container').css({
                 display: 'block'
             })
        },
        hiddenAlert () {
            this.showBox = false
+           $('.bg-black').css({
+                display: 'none'
+            })
            $('.pinch-zoom-container').css({
                 display: 'none'
             })
@@ -103,7 +111,7 @@ div.bigImgBox img {
     width: 100%;
     -webkit-user-drag: none;
 }
-div.bigImgBox {
+div.bigImgBox,div.bg-black {
     position:absolute;
     left:0;
     right:0;
@@ -126,5 +134,8 @@ div.bigImgBox .big-team {
 .bigImgBox .closeBox img {
     width: 0.44rem;
     height: 0.44rem;
+}
+.bg-black {
+    display: none;
 }
 </style>
