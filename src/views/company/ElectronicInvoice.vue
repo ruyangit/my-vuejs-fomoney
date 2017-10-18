@@ -64,10 +64,10 @@
               </li>
               <li>
                 <p class="title">用户运营</p>
-                <p class="detail">提供从电子发票到整合营销的全套方案，帮助客户实现用户从线下到线上的联通</p>
+                <p class="detail">提供从电子发票到整合营销的全套方案，帮助客户实现从线下到线上的联通</p>
               </li>
             </ol>
-            <p class="fs28 text-center">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+            <p class="fs28 text-center">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
          </div>
       </div>
       <z-footer></z-footer>
@@ -94,7 +94,7 @@
                       <span>* </span>联系人：</label>
                     </td>
                     <td>
-                      <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入名称" name="name">
+                      <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入联系人" name="name">
                     </td>
                   </tr>
                   <tr>

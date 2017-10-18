@@ -15,7 +15,7 @@
             <a class="btn" href="javascript:;"   @click="isShow=!isShow">我要申请</a>            
         </div>
         <div class="company-carlease-bg">
-            <p class="fs28 text-center c-808080 mt30">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+            <p class="fs28 text-center c-808080 mt30">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
         </div>
         <!--弹框-->
         <transition name="fade">
@@ -38,10 +38,10 @@
                             <tr>
                                 <td>
                                     <label for="name">
-                                        <span>* </span>名称：</label>
+                                        <span>* </span>联系人：</label>
                                 </td>
                                 <td>
-                                    <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入名称" name="name">
+                                    <input :class="{'input': true, 'is-danger': errors.has('myform.name') }" v-validate="'required'" v-model="myform.name" type="text" placeholder="请输入联系人" name="name">
                                 </td>
                             </tr>
                             <tr>
@@ -97,7 +97,8 @@ export default {
         zFooter
     },
     created() {
-        this.defaultData = JSON.parse(JSON.stringify(this.myform));
+        this.defaultData = JSON.parse(JSON.stringify(this.myform));       
+        document.body.style.background='#fff';
     },
     methods: {
         async validateBeforeSubmit(scope) {

@@ -3,9 +3,8 @@
         <z-header goBack='true' headTitle="走进金服"></z-header>
         <!--内容-->
         <div class="container enter-common-container enter-cooperative-container">
-            <h2>合作伙伴
-                <span>COOPERATIVE PARTNER</span>
-            </h2>            
+            <h2>合作伙伴</h2>
+                        
             <div class="enter-partner-box">
                 <!-- Swiper -->
                 <div class="swiper-container">

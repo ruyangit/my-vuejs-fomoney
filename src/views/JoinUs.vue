@@ -3,7 +3,7 @@
 		<z-header goBack='true' headTitle="加入我们"></z-header>
 		<div class="container join-us-container">
 			<div class="join-banner">
-				<h3 class="fs32">简历请投递至wangw@fosun.com</h3>				
+				<h3 class="fs32">简历请投递至FXJFHR@fosun.com</h3>				
 			</div>
 			<div class="join-content-txt">
 				<h5><span>选：以发展来吸引人</span><span>用：以业绩来考核人</span></h5>

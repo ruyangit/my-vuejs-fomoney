@@ -7,10 +7,10 @@
  * 
  */
 
-let baseUrl = 'http://www.fomoney.com/api'; 
+let baseUrl = 'http://www.fosunfinancial.com/api'; 
 let routerMode = 'history';
-let imgBaseUrl = 'http://www.fomoney.com';
-let fileBaseUrl = 'http://www.fomoney.com';
+let imgBaseUrl = 'http://www.fosunfinancial.com';
+let fileBaseUrl = 'http://www.fosunfinancial.com';
 
 
 if (process.env.NODE_ENV == 'development') {

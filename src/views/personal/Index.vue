@@ -8,7 +8,7 @@
                 <div class="shadow">
                     <div class="txt-box">
                         <h3>我要贷款</h3>
-                        <p>借款不求人，就是这么简易快活！</p>
+                        <p>借款不求人，就这么简易！</p>
                     </div>
                 </div>
             </router-link>
@@ -16,7 +16,7 @@
                 <div class="shadow">
                     <div class="txt-box">
                         <h3>我要买车</h3>
-                        <p>创富汽车金融，启动梦想里程</p>
+                        <p>创富汽车金融，启动梦想里程！</p>
                     </div>
                 </div>
             </router-link>

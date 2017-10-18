@@ -10,10 +10,10 @@
                 <label>超高额度：</label>
                 <span>最高可借500万</span>
             </h3>
-            <h3>
+            <!-- <h3>
                 <label>超低日息：</label>
                 <span>按日计息，最低至万分之2.49</span>
-            </h3>
+            </h3> -->
             <h3>
                 <label>随借随还：</label>
                 <span>60天内随借随还</span>
@@ -35,7 +35,7 @@
                     <img src="/static/images/company_ptd_icon04.png" alt="钢银电商">
                 </div>
             </div>
-            <p class="fs28">服务热线：<a class="a-tel" href="tel:15102155250">400-700-8808</a></p>
+            <p class="fs28">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
         </div>
         <div class="btn-box">
             <a class="btn" href="javascript:;"  @click="isShow=!isShow">我要申请</a>
