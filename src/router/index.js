@@ -198,7 +198,10 @@ export default new Router({
         },
         {
             path: '/appdownload',
-            component: AppDownload
+            component: AppDownload,
+            meta:{
+                // title:"APP下载"
+            }
         }
     ]
 })

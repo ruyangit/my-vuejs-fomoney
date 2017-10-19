@@ -31,9 +31,6 @@
                 <div class="iconitem">
                     <img src="/static/images/company_ptd_icon03.png" alt="构家">
                 </div>
-                <div class="iconitem">
-                    <img src="/static/images/company_ptd_icon04.png" alt="钢银电商">
-                </div>
             </div>
             <p class="fs28">服务热线：<a class="a-tel" href="tel:400-700-8808">400-700-8808</a></p>
         </div>
@@ -90,7 +87,6 @@
                                         <option value="1">&nbsp;Amazon</option>
                                         <option value="2">&nbsp;药师帮</option>
                                         <option value="3">&nbsp;构家网</option>
-                                        <option value="4">&nbsp;钢银电商</option>
                                     </select>
                                 </td>
                             </tr>

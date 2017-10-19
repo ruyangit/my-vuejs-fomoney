@@ -30,6 +30,9 @@ export default {
         zHeader,
         zFooter
     },
+    created() {
+        document.body.style.background='#fff';
+    },
     methods: {
         downloadApp(){
             if(this.is_ios()){
