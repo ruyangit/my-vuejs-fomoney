@@ -341,7 +341,7 @@ footer.personal-buycar-pb125 {
 }
 
 .footer-css{
-    margin-bottom: 1.3rem!important;
+    padding-bottom: 1.3rem!important;
 }
 
 .pb45 {
