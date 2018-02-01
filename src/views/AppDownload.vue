@@ -87,7 +87,7 @@ export default {
 
 .app-container .app-txt-box img {
     width: 5.53rem;
-    height: 1.03rem;
+    height: 0.53rem;
 }
 
 .app-container .imgandbnt {
